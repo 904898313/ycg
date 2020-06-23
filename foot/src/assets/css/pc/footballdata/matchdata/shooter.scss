@@ -1,0 +1,216 @@
+.content-smallbox{
+    width: 1200px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: space-between;
+    // 左
+    .left{
+        width: 840px;
+        height: 100%;
+        // 公用
+        .result{
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 10px;
+            header{
+                width: 100%;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #f5f5f5;
+                p{
+                    width: 100%;
+                    height: 22px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 20px;
+                    border-left: 6px solid $ffc002;
+                    margin-left: -10px;
+                    span:nth-child(1){
+                        font-size: 20px;
+                        color: #202021;
+                        font-weight: 900;
+                    }
+                    span:nth-child(2){
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #999999;
+                        cursor: pointer;
+                    }
+                }
+            }
+            //赛季积分榜
+            .integral{
+                .title{
+                    width: 100%;
+                    height: 40px;
+                    background-color: #f7f7fb;
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    color: #999999;
+                    // justify-content: space-around;
+                }
+
+                .distance{
+                    text-align: center;
+                    span{
+                        width: 90px;
+                    }
+                    span:nth-child(2){
+                        width: 150px;
+                    }
+                    span:nth-child(4){
+                        width: 150px;
+                    }
+                }
+
+                .title1{
+                    width: 100%;
+                    height: 50px;
+                    background-color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    color: #202021;
+                    border-bottom: 1px solid #f5f5f5;
+                    // justify-content: space-around;
+                    span:nth-child(1){
+                        font-family: Montserrat-Bold;
+                        font-size: 14px;
+                        color: #999999;
+                        line-height: 18px;
+                        text-align: center;
+                            span{
+                                display: block;
+                                margin: 0 auto;
+                                width: 18px;
+                                height: 18px;
+                                border-radius: 4px 0px 4px 0px;
+                            }
+                    }
+                    span:nth-child(2){
+                        cursor: pointer;
+                    }
+                    span:nth-child(4){
+                        cursor: pointer;
+                    }
+                }
+
+                //分页
+                .paging{
+                    width: 100%;
+                    height: 68px;
+                    background-color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            //英超球队赛程表查询
+            .query{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                padding:10px;
+                .query-content{
+                    width: 132px;
+                    height: 36px;
+                    background-color: #f3f3f8;
+                    cursor: pointer;
+                    font-size: 14px;
+                    line-height: 36px;
+                    text-align: center;
+                    color: #202021;
+                    margin: 10px 10px;
+                }
+            }
+            //英格兰超级联赛规则、赛制说明
+            .text{
+                width: 100%;
+                padding: 20px;
+                background-color: #ffffff;
+                border-top: 1px solid #f6f6f6;
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #202021;
+                    margin: 8px 0;
+                }
+                p:nth-child(3){
+                    color: #202021;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    //右
+    .right{
+        width: 330px;
+        height: 100%;
+        background-color: #f1f4f9;
+        // 数据统计 复用
+        .repeat{
+            width: 100%;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            header{
+                width: 100%;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                font-weight: 900;
+                font-size: 20px;
+                color: #202021;
+                border-bottom: 1px solid #eeeeee;
+                span{
+                    padding-left: 20px;
+                }
+                img{
+                    margin-left: 5px;
+                }
+            }
+            .repeat-list{
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+                font-size: 16px;
+                color: #202021;
+                p{
+                    height: 35px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 16px;
+                        height: 16px;
+                        background-color: skyblue;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            // 英超各赛季数据回顾
+            .repeat-box{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                padding: 15px 10px;
+                flex-wrap: wrap;
+                div{
+                        height: 36px;
+                        background-color: #f3f3f8;
+                        font-size: 14px;
+                        line-height: 36px;
+                        color: #202021;
+                        text-align: center;
+                        margin: 5px 5.5px;
+                        cursor: pointer;
+                        padding: 0 12px;
+                }
+            }
+        }
+    }
+}

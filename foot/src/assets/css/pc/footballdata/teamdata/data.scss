@@ -1,0 +1,796 @@
+//分类统计
+.sort{
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    border: solid 1px #eeeeee;
+    margin-top: 10px;
+    padding: 0 20px;
+        //头部导航
+        .nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            //头部
+            .head{
+                display: flex;
+                //默认样式
+                span{
+                    display: block;
+                    height: 22px;
+                    line-height: 22px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 2px solid #f7f7f7;
+                    margin-right: 15px;
+                    color: #999999;
+                    img{
+                        display: block;
+                        width: 12px;
+                        height: 8px;
+                        background-color: skyblue;
+                        margin-right: 4px;
+                    }
+                }
+                //选中样式
+                .select{
+                    border-bottom: 2px solid #00aded;
+                    color: #00aded;
+                }
+            }
+            //赛季选择
+            .season{
+                display: flex;
+                align-items: center;
+                .tit{
+                    margin-right: 10px;
+                }
+                
+                .list{
+                    width: 80px;
+                    height: 24px;
+                    // background-color: red;
+                    text-align: center;
+                    border: 1px solid #d6d6d6;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    z-index: 10;
+                    ul{
+                        display: none;
+                        li{
+                            background-color: #eeeeee;
+                        }
+                    }
+                    .block{
+                        display: block;
+                    }
+                }
+            }
+        }
+        //统计
+        .statistic{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-bottom: 20px;
+            .left{
+                width: 390px;
+                height: 160px;
+                background-color: #ffffff;
+                border-radius: 4px;
+                border: solid 1px #dddddd;
+                display: flex;
+                flex-direction: column;
+                // header
+                header{
+                    width: 100%;
+                    height: 33px;
+                    background-color: #e8eaee;
+                    display: flex;
+                }
+                //循环
+                .contents{
+                    width: 100%;
+                    height: 34px;
+                    display: flex;
+                    border-bottom: solid 1px #dddddd;
+                    p{
+                        border-right: 1px solid #dddddd;
+                    }
+                }
+                //公用
+                .pulic{
+                    p{
+                        width: 30px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    p:nth-child(1){
+                        width: 50px;
+                    }
+                    p:nth-child(6){
+                        width: 160px;
+                        display: flex;
+                        align-items: center;
+                        span{
+                            width: 20px;
+                            height: 20px;
+                            background-color: #f65e53;
+                            border-radius: 2px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-weight: 900;
+                            color: #ffffff;
+                            margin: 0 3px;
+                        }
+                        span:nth-child(4){
+                            background-color: #a6b2be;
+                        }
+                        span:nth-child(5){
+                            background-color: #2fcc87;
+                        }
+                    }
+                    p:nth-child(7){
+                        flex: 1;
+                    }
+                }
+                //总计加粗行
+                .pulic:nth-child(2){
+                    color: #333333;
+                    font-weight: 900;
+                    background-color: #f4f6fa;
+                }
+                //bot
+                .bot{
+                    flex: 1;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    text-indent: 1em;
+                    span:nth-child(2){
+                        color: #f65e53;
+                        font-weight: 900;
+                    }
+                }
+            }
+            .right{
+                width: 390px;
+                height: 160px;
+                background-color: #ffffff;
+                border-radius: 4px;
+                border: solid 1px #dddddd;
+                display: flex;
+                flex-direction: column;
+                // header
+                header{
+                    width: 100%;
+                    height: 33px;
+                    background-color: #e8eaee;
+                    font-weight: 900;
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 14px;
+                    color: #333333;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        margin-left: 6px;
+                    }
+                }
+                // 角球统计
+                .contents{
+                    width: 100%;
+                    height: 100px;
+                    background-color: #ffffff;
+                    border-top: 1px solid #dddddd;
+                    border-bottom: 1px solid #dddddd;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #999999;
+                    img{
+                        width: 54px;
+                        height: 60px;
+                    }
+                    .center{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        text-align: center;
+                        margin: 0 30px;
+                        .weight{
+                            font-family: MicrosoftYaHei-Bold;
+                            font-size: 20px;
+                            color: #333333;
+                            font-weight: 900;                        
+                        }
+                    }
+                    .data{
+                        width: 130px;
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+                        margin: 10px 0;
+                        span:nth-child(2){
+                            display: block;
+                            width: 40px;
+                            height: 12px;
+                            background-color: #0066c0;
+                            margin-left: 6px;
+                        }
+                        .col{
+                            position: absolute;
+                            right: 0;
+                            color: #333333;
+                        }
+                    }
+
+                }
+                // bot
+                .bot{
+                    flex: 1;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    color: #8d8d8d;
+                }
+            }
+        }
+        //进球热度图
+        .hoc{
+            width: 100%;
+            height: 277px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            border: solid 1px #dddddd;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            // 头部
+            header{
+                width: 100%;
+                height: 33px;
+                background-color: #e8eaee;
+                border-bottom: solid 1px #dddddd;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left{
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 14px;
+                    color: #333333;
+                    font-weight: 900;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 20px;
+                    img{
+                        margin-right: 10px;
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                .right{
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #333333;
+                    margin-right: 20px;
+                }
+            }
+            // 热度图
+            .body{
+                width: 100%;
+                height: 244px;
+                border-top: solid 1px #dddddd;
+                // 进球失球切换
+                .title{
+                    margin-top: 17px;
+                    width: 100%;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    div{
+                        width: 80px;
+                        height: 24px;
+                        border: solid 1px #d2d2d2;
+                        margin: 0 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: MicrosoftYaHei;
+                        font-size: 12px;
+                        color: #333333;
+                        cursor: pointer;
+                    }
+                    //选择样式
+                    .select{
+                        background-color:#afafaf;
+                        color:#ffffff;
+                    }
+                }
+                .data{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 33px;
+                    margin-top:30px;
+                    p{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        span:nth-child(1){
+                            font-family: MicrosoftYaHei-Bold;
+                            font-size: 20px;
+                            color: #333333;
+                            font-weight: 900;
+                        }
+                    }
+                }
+                
+                .chart{
+                    width: 100%;
+                    height: 30px;
+                    padding: 0 33px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 20px;
+                    position: relative;
+                    span{
+                        width: 24px;
+                        height: 30px;
+                        background-color: #197238;
+                    }
+                    span:nth-child(16){
+                        background-color: #2a2d33;
+                        font-family: MicrosoftYaHei;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                    }
+                    p{
+                        position: absolute;
+                        top: 35px;
+                    }
+                    .p1{
+                        left: 144px;
+                    }
+                    .p2{
+                        left: 263px;
+                    }
+                    .p3{
+                        right: 263px;
+                    }
+                    .p4{
+                        right: 145px;
+                    }
+                }
+                .colordiv{
+                    width: 100%;
+                    display: flex;
+                    margin-top: 43px;
+                    padding: 0 32px;
+                    display: flex;
+                    align-items: center;
+
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #999999;
+                    div{
+                        width: 10px;
+                        height: 10px;
+                    }
+                    span{
+                        margin: 0 12px 0 3px;
+                    }
+                    p{
+                        color: #999999;
+                        margin-left: 10px;
+                    }
+                    .color1{
+                        background-color: #81b292;
+                    }
+                    .color2{
+                        background-color: #197238;
+                    }
+                    .color3{
+                        background-color: #b32c22;
+                    }
+                    .color4{
+                        background-color: #b32c22;
+                    }
+                }
+            }
+        }
+        // 比赛数据
+        .match{
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            border-radius: 4px;
+            border: solid 1px #dddddd;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            // 头部
+            header{
+                width: 100%;
+                height: 33px;
+                background-color: #e8eaee;
+                border-bottom: solid 1px #dddddd;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left{
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 14px;
+                    color: #333333;
+                    font-weight: 900;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 20px;
+                    img{
+                        margin-right: 10px;
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                .right{
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #333333;
+                    margin-right: 20px;
+                }
+            }
+            //场次选择
+            .title{
+                width: 100%;
+                height: 58px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #dddddd;
+                .left{
+                    margin-left: 23px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    span:nth-child(1){
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: #333333;
+                    }
+                    span:nth-child(2){
+                        font-family: MicrosoftYaHei;
+                        font-size: 14px;
+                        color: #999999;
+                        margin-left: 3px;
+                    }
+                    img{
+                        margin-left: 5px;
+                    }
+                }
+                .right{
+                    margin-right: 20px;
+                    .list{
+                        width: 80px;
+                        height: 24px;
+                        // background-color: red;
+                        text-align: center;
+                        border: 1px solid #d6d6d6;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        z-index: 10;
+                        ul{
+                            display: none;
+                            li{
+                                background-color: #eeeeee;
+                            }
+                        }
+                        .block1{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            // 比赛数据
+            .data{
+                width: 100%;
+                height: 106px;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                line-height: 28px;
+                color: #999999;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                padding: 0 20px;
+                border-bottom: 1px solid #eeeeee;
+                p{
+                    margin: 0 13px;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                span{
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 20px;
+                    font-weight: normal;
+                    letter-spacing: 0px;
+                    color: #333333;
+                    font-weight: 900;
+                }
+            }
+            // 数据详情
+            .details{
+                width: 100%;
+                height: 100%;
+                header{
+                    display: flex;
+                    width: 100%;
+                    height: 44px;
+                    background-color: #ffffff;
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 12px;
+                    color: #333333;
+                    font-weight: 900;
+                    p:nth-child(5){
+                        color: #999999;
+                        font-weight: 400;
+                        span{
+                            display: flex;
+                            img{
+                                margin: 0 5px;
+                                display: block;
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                       
+                    }
+                }
+                .contents{
+                    width: 100%;
+                    height: 30px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    line-height: 21px;
+                    color: #333333;
+                    p{
+                        height: 100%;                           
+                    }
+                    p:nth-child(2){
+                        display: flex;
+                        align-items: center;
+                        img{
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            background-color: skyblue;
+                            margin: 0 5px;
+                        }                  
+                    }
+                    p:nth-child(3){
+                        font-size: 14px;
+                        font-weight: 900; 
+                        color: #f65e53;       
+                    }
+                    p:nth-child(4){
+                        display: flex;
+                        align-items: center;
+                        img{
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            background-color: skyblue;
+                            margin: 0 5px;
+                        }      
+                    }
+                    p:nth-child(5){
+                        width: 384px;
+                        justify-content: flex-start;
+                        background-color: #7f9075;                    
+                    }
+                    p:nth-last-child(1){
+                        font-size: 14px;
+                        color: #333333;
+                        font-weight: 900;
+                    }
+                }
+                .contents:nth-child(even){
+                    background-color: #f2f2f2;
+                    p:nth-child(5){
+                        width: 384px;
+                        justify-content: flex-start;
+                        background-color: #587348;                    
+                    }
+                }
+                //公用
+                .pulic{
+                    display: flex;
+                    justify-content: flex-start;
+                    p{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    p:nth-child(1){
+                        // margin-left: 20px;
+                        width:80px;
+                        font-size: 12px;
+                        // justify-content: flex-start;                              
+                    }
+                    p:nth-child(2){
+                        width: 120px;
+                        justify-content: flex-end;
+                    }
+                    p:nth-child(3){
+                        width: 46px;
+                    }
+                    p:nth-child(4){
+                        width: 120px;
+                        justify-content: flex-start;                        
+                    }
+                    p:nth-child(5){
+                        width: 384px;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+                    p:nth-child(6){
+                        flex: 1;
+                    }
+                    
+                }
+            }
+        }
+        //本赛季数据
+        .total{
+            width: 100%;
+            height: 100%;
+            .totals{
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+                border: solid 1px #dddddd;
+                margin-bottom: 20px;
+                header{
+                    width: 100%;
+                    height: 33px;
+                    background-color: #d26b5e;
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 14px;
+                    color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .head{
+                    height: 33px;
+                    background-color: #e8eaee;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #333333;
+                    opacity: 0.7;
+                    p{
+                        border-right: 1px solid #dddddd;
+                        border-bottom: 1px solid #dddddd;
+                    }
+                }
+                .body{
+                    height: 43px;
+                    background-color: #ffffff;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    line-height: 21px;
+                    color: #333333;
+                    p{
+                        border-right: 1px solid #dddddd;
+                    }
+                    p:nth-child(9){
+                        background-color: #fff7f5;
+                        color: #f65e53;
+                        font-weight: 900;
+                    }
+                    p:nth-child(10){
+                        background-color: #f8fafd;
+                        font-family: MicrosoftYaHei-Bold;
+                        color: #9dabb9;
+                        font-weight: 900;
+                    }
+                    p:nth-child(11){
+                        background-color: #f5fdf9;
+                        font-family: MicrosoftYaHei-Bold;
+                        color: #2fcc87;
+                        font-weight: 900;
+                    }
+                    p:nth-last-child(1){
+                        font-weight: 900;
+                        
+                    }
+                }
+                //公用样式
+                .list{
+                    width: 100%;
+                    display: flex;
+
+                    p{
+                        width: 35px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    p:nth-child(1){
+                        width: 56px;
+                    }
+                    p:nth-child(9){
+                        flex: 1;
+                        font-family: MicrosoftYaHei-Bold;
+                        font-size: 12px;
+                    }
+                    p:nth-child(10){
+                        flex: 1;
+                    }
+                    p:nth-child(11){
+                        flex: 1;
+                    }
+                    p:nth-child(12){
+                        flex: 1;
+                    }
+                    p:nth-child(13){
+                        flex: 1;
+                    }
+                    p:nth-child(14){
+                        flex: 1;
+                    }
+                }
+            }
+            .totals:nth-child(2){
+                header{
+                    background-color: #de958c;
+                }
+            }
+            .totals:nth-child(3){
+                header{
+                    background-color: #f3bd43;
+                }
+            }
+            .totals:nth-child(4){
+                header{
+                    background-color: #f4ce79;
+                }
+            }
+            .totals:nth-child(5){
+                header{
+                    background-color: #57def1;
+                }
+            }
+            .totals:nth-child(6){
+                header{
+                    background-color: #88e6f2;
+                }
+            }
+        }
+}

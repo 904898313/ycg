@@ -1,0 +1,185 @@
+.container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+nav {
+    margin-top: .39rem;
+
+    img {
+        width: .48rem;
+        height: .48rem;
+        left: .3rem;
+        top: .6rem;
+    }
+
+    .title {
+        font-weight: bold;
+    }
+}
+
+.navList {
+    width: 6.9rem;
+    margin: .5rem auto 0rem;
+    display: flex;
+    margin-top: .5rem;
+    height: 1.39rem;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+
+    ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+
+            .yue {
+                font-size: .4rem;
+                color: #222222;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: .14rem;
+                    height: .1rem;
+                }
+            }
+
+            .nian {
+                font-size: .24rem;
+                color: #999999;
+            }
+
+            .sr-money {
+                font-size: .32rem;
+                color: #f55e53;
+                font-weight: bold;
+            }
+
+            .zc-money {
+                font-size: .32rem;
+                color: #2fcc86;
+            }
+        }
+
+        i {
+            width: .02rem;
+            height: .56rem;
+            background-color: #d3d3d3;
+        }
+    }
+}
+
+.echarts {
+    width: 6.9rem;
+    height: 3.69rem;
+    margin: .4rem auto 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mychart {
+        width: 6.9rem;
+        height: 3.69rem;
+    }
+}
+
+.tabs {
+    width: 100%;
+    height: 1rem;
+    background-color: #fff;
+    margin-top: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        width: 2.2rem;
+        height: .65rem;
+        background-color: #f1f1f1;
+        border-radius: .33rem;
+        font-size: .28rem;
+        color: #999999;
+        line-height: .65rem;
+        text-align: center;
+        margin: 0rem .15rem;
+    }
+
+    .active {
+        width: 2.2rem;
+        height: .65rem;
+        background-color: #ffc002;
+        border-radius: .33rem;
+        line-height: .65rem;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.tableList {
+    width: 100%;
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 1.2rem;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            padding-left: .30rem;
+
+            .title {
+                font-size: .28rem;
+                color: #222222;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width:5rem;
+            }
+
+            .times {
+                font-size: .24rem;
+                color: #999999;
+            }
+        }
+
+        .right {
+            padding-right: .30rem;
+            font-size: .28rem;
+            color: #222222;
+            font-weight: bold;
+        }
+    }
+}
+
+.addbooks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+
+    img {
+        width: .28rem;
+        height: .28rem;
+        padding-right: .1rem;
+    }
+
+    span {
+        color: #ffc002;
+        font-size: .32rem;
+        font-weight: bold;
+    }
+}

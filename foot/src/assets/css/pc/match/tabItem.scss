@@ -1,0 +1,223 @@
+.top {
+    display: flex;
+    flex-direction: column;
+
+    .charts {
+        display: flex;
+        justify-content: space-between;
+
+        .my-charts {
+            width: 518px;
+            height: 192px;
+        }
+
+        .tongji {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 40px;
+
+            .number {
+                display: flex;
+                border: solid 1px #eeeeee;
+                border-right: 0;
+
+                span {
+                    width: 80px;
+                    height: 40px;
+                    border-right: solid 1px #eeeeee;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #333333;
+                    font-size: 14px;
+                }
+            }
+
+            .diff {
+                background-color: #f7f7fb;
+                margin-bottom: -1px;
+            }
+
+            .count {
+                height: 58px;
+                width: 170px;
+                color: #999999;
+                text-align: center;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+}
+
+.tables {
+    width: 100%;
+    margin-top: .2rem;
+
+    .thead {
+        display: flex;
+        border-top: 1px #e5e5e5 solid;
+
+        span {
+            color: #999999;
+            text-align: center;
+            font-size: 14px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        :nth-child(1) {
+            width: 180px;
+            border-right: 1px #e5e5e5 solid;
+        }
+
+        :nth-child(2) {
+            width: 180px;
+        }
+
+        :nth-child(3) {
+            width: 180px;
+        }
+
+        :nth-child(4) {
+            width: 60px;
+        }
+
+        :nth-child(5) {
+            width: 180px;
+        }
+
+        :nth-child(6) {
+            flex: 1;
+        }
+    }
+
+    .tbody {
+        display: flex;
+        flex-direction: column;
+        border-bottom: solid 1px #e5e5e5;
+        box-sizing: border-box;
+
+        .trs {
+            display: flex;
+            align-items: center;
+            height: 30px;
+
+            .theme {
+                width: 180px;
+                border-right: 1px #e5e5e5 solid;
+                border-top: 1px #e5e5e5 solid;
+                height: 30px;
+            }
+
+            .chushi {
+                width: 60px;
+                height: 30px;
+                line-height: 30px;
+                color: #999999;
+                font-size: 12px;
+                text-align: center;
+                border-top: solid 1px #e5e5e5;
+                border-right: solid 1px #e5e5e5;
+                background-color: #f5f5f6;
+            }
+
+            .jishi {
+                @extend .chushi;
+                background-color: #ffffff;
+            }
+
+            .fanhuan {
+                width: 60px;
+                height: 30px;
+                background-color: #d1d1d1;
+                @extend .chushi;
+            }
+
+            .kaili {
+                @extend .chushi;
+                background-color: #ffffff;
+            }
+
+            .tongpei {
+                @extend .chushi;
+                flex: 1;
+                background-color: #ffffff;
+            }
+        }
+    }
+}
+
+
+.radios {
+    margin-top: 17px;
+    padding-left: 20px;
+}
+
+// 自定义单选样式
+.radio-box {
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #999999;
+    margin-right: 15px;
+}
+
+
+// 自定义单选样式
+.radio-box1 {
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #999999;
+    margin-right: 15px;
+}
+
+.radio {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 5px 4px;
+    background-image: url(../../../../assets/images/match/choose_i2@2x.png);
+}
+
+.radio1 {
+    @extend .radio;
+    margin-left: 20px;
+    background-image: url(../../../../assets/images/match/choose_i4@2x.png);
+}
+
+.input-radio {
+    display: inline-block;
+    position: absolute;
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    left: 0px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.input-radio1 {
+    @extend .input-radio;
+    margin-left: 20px;
+}
+
+.on {
+    background-image: url(../../../../assets/images/match/choose_i@2x.png);
+}
+
+.on1 {
+    background-image: url(../../../../assets/images/match/choose_i3@2x.png);
+}

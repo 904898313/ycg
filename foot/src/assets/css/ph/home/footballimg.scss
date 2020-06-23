@@ -1,0 +1,75 @@
+.footballimgBox{
+  background-color: #ffffff;
+  margin-top: 0.2rem;
+  .ballList{
+    padding: 0 0.24rem 0.24rem 0.24rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .ball_item{
+      width: 3.4rem;
+      height: 3.3rem;
+      border: 1px solid #eeeeee;
+      border-radius: 0.04rem;
+      margin-top: 0.24rem;
+      .ball_top{
+        width: 100%;
+        height: 1.92rem;
+        position: relative;
+        .ball_img{
+          width: 100%;
+          height: 1.92rem;
+        }
+        .ball_num{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 0.54rem;
+          background-color: rgba(0,0,0,0.4);
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 0 0.2rem;
+          >img{
+            width: 0.25rem;
+            height: 0.21rem;
+          }
+          >span{
+            color: #ffffff;
+            font-size: 0.2rem;
+            margin-left: 0.08rem;
+          }
+        }
+      }
+      >p{
+        font-size: 0.28rem;
+        color: #202021;
+        padding: 0.1rem 0.2rem;
+        line-height: 0.36rem;
+      }
+      .item_info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.2rem;
+        >span{
+          font-size: 0.24rem;
+          color: #999999;
+        }
+        .item_check{
+          display: flex;
+          align-items: center;
+          >img{
+            width: 0.23rem;
+            height: 0.18rem;
+          }
+          >span{
+            font-size: 0.24rem;
+            color: #999999;
+            margin-left: 0.05rem;
+          }
+        }
+      }
+    }
+  }
+}

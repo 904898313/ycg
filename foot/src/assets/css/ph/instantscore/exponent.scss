@@ -1,0 +1,139 @@
+.sec {
+    background-color: #ffffff;
+
+    .sec-btn {
+        display: flex;
+        justify-content: center;
+        padding: .3rem 0rem;
+
+        span {
+            width: 2.2rem;
+            height: .64rem;
+            background-color: #f1f1f1;
+            border-radius: .32rem;
+            text-align: center;
+            line-height: .64rem;
+            color: #999999;
+            font-size: .3rem;
+            margin: 0rem .1rem;
+        }
+
+        .active {
+            background-color: #ffc002;
+            color: #ffffff;
+        }
+    }
+
+    .exp {
+        display: flex;
+        justify-content: space-around;
+
+        .left {
+            display: flex;
+            margin-bottom: 0.3rem;
+
+            p {
+                color: #202021;
+                font-size: .26rem;
+            }
+
+            >:nth-child(1) {
+                margin: 0rem .2rem;
+
+                i {
+                    color: #f55e53;
+                    font-weight: bold;
+                }
+            }
+
+            >:nth-child(2) {
+                margin: 0rem .2rem;
+
+                i {
+                    color: #2fcc86;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+}
+
+.exp-tables {
+    .title {
+        height: .56rem;
+        background-color: #edeef3;
+        display: flex;
+        align-items: center;
+
+        .menu1 {
+            flex: 1;
+        }
+
+        .menu2 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: .56rem;
+            line-height: .56rem;
+            flex: 2;
+            font-size: .24rem;
+            color: #999999;
+        }
+
+        .rate {
+            @extend .menu2
+        }
+    }
+
+    .list {
+        .info {
+            height: .8rem;
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+
+            div {
+                display: flex;
+                height: .8rem;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .cname {
+                color: #202021;
+                font-size: .24rem;
+                font-weight: bold;
+                flex: 1;
+                border-right: .01rem#efefef solid;
+            }
+
+            .chu {
+                flex: 2;
+                display: flex;
+                border-right: .01rem#efefef solid;
+
+                span {
+                    flex: 1;
+                    color: #202021;
+                    font-size: .24rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    line-height: .8rem;
+
+                    img {
+                        width: .14rem;
+                        height: .18rem;
+                        margin-left: .03rem;
+                    }
+                }
+            }
+
+            .ji {
+                @extend .chu;
+                flex: 2;
+            }
+        }
+    }
+}

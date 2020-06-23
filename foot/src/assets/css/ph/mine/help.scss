@@ -1,0 +1,42 @@
+.container{
+    width:100%;
+    position: absolute;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+    background: #f1f1f6;
+}
+nav{
+    display: flex;
+    width:100%;
+    padding-top:.39rem;
+    height:.8rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    img{
+        position: absolute;
+        width:.48rem;
+        height:.48rem;
+        left:.3rem;
+    }
+    span{
+        text-align: center;
+        font-weight: bold;
+        font-size: .36rem;
+    }
+}
+
+.helpList{
+    width:100%;
+    margin-top:.2rem;
+    .item{
+        width:100%;
+    }
+}
+
+.collapse{
+    background-color: #f1f1f6 !important;
+}

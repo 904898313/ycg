@@ -1,0 +1,224 @@
+.gameBox{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  .game_lf_top{
+    background-color: #ffffff;
+    height: 42px;
+    border-bottom: 3px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    >p{
+      height: 45px;
+      line-height: 45px;
+      padding: 0 15px;
+      border-bottom: 3px solid #ffc201;
+      font-size: 16px;
+      color: #333333;
+      font-weight: bold;
+    }
+    >span{
+      font-size: 12px;
+      color: #555555;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+  }
+  .game_lf{
+    width: 850px;
+    background-color: #ffffff;
+    .game_lf_bom{
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-end;
+      padding: 0 16px 18px 16px;
+      .game_lf_item{
+        width: 260px;
+        height: 164px;
+        border: 1px solid #eeeeee;
+        margin-left: 19px;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .game_item_top{
+          padding: 10px;
+          font-size: 12px;
+          color: #2d2d2d;
+          >span{
+            margin-right: 12px;
+          }
+        }
+        .game_pk{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .game_team{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .game_team_icon{
+              width: 45px;
+              height: 45px;
+              margin-bottom: 7px;
+            }
+            >span{
+              font-size: 14px;
+              color: #333333;
+            }
+          }
+          .game_vs{
+            width: 28px;
+            height: 28px;
+            background-color: #30303d;
+            text-align: center;
+            line-height: 30px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #ffffff;
+            border-radius: 50%;
+            margin: 0 10px 25px 10px;
+          }
+        }
+        .game_item_bom{
+          height: 30px;
+          padding: 0 10px;
+          background-color: #f5f5f6;
+          border-top: solid 1px #eeeeee;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .game_bom_lf{
+            font-size: 12px;
+            color: #999999;
+            >span{
+              font-size: 12px;
+              color: #f55e53;
+            }
+          }
+        }
+      }
+      .game_lf_item:nth-child(3n+1){
+        margin-left: 0;
+      }
+    }
+  }
+  .game_rt{
+    width: 330px;
+    .game_league{
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      >li{
+        font-size: 14px;
+        color: #333333;
+        cursor: pointer;
+        margin-left: 20px;
+      }
+      >li:first-child{
+        margin-left: 0;
+      }
+      .leagueActive{
+        border: 1px solid #ffc201;
+        color: #ffc201;
+        line-height: 18px;
+        padding: 0 5px;
+      }
+    }
+    .table_header{
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      >li{
+        font-size: 12px;
+        color: #999999;
+        text-align: center;
+      }
+      li:nth-child(1){
+        flex: 2;
+      }
+      li:nth-child(2){
+        flex: 1;
+      }
+      li:nth-child(3){
+        flex: 1;
+      }
+      li:nth-child(4){
+        flex: 1;
+      }
+      li:nth-child(5){
+        flex: 1;
+      }
+      li:nth-child(6){
+        flex: 1;
+      }
+      li:nth-child(7){
+        flex: 1;
+      }
+    }
+    .table_list{
+      padding: 4px 10px 0px 10px;
+      background-color: #ffffff;
+      >li{
+        border-bottom: solid 1px #eeeeee;
+        .table_item_list{
+          height: 44px;
+          display: flex;
+          >li{
+            font-size: 12px;
+            color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+              font-size: 18px;
+              color: #c3bec2;
+              margin-right: 5px;
+            }
+          }
+          li:nth-child(1){
+            flex: 2;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+          }
+          li:nth-child(2){
+            flex: 1;
+          }
+          li:nth-child(3){
+            flex: 1;
+          }
+          li:nth-child(4){
+            flex: 1;
+          }
+          li:nth-child(5){
+            flex: 1;
+          }
+          li:nth-child(6){
+            flex: 1;
+          }
+          li:nth-child(7){
+            flex: 1;
+          }
+        }
+      }
+      li:last-child{
+        border: 0;
+      }
+    }
+  }
+  .hot_checkMore{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #555555;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-top: 1px solid #eeeeee;
+  }
+}

@@ -1,0 +1,534 @@
+.big{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+//欧赔预测
+.forecast{
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    .content{
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border: solid 1px #eeeeee;
+        header{
+            width: 100%;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 16px;
+            color: #333333;
+            .left{
+                display: flex;
+                align-items: center;
+            }
+            p{
+                height: 14px;
+                line-height: 14px;
+            }
+            p:nth-child(1){
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 16px;
+                color: #333333;
+                font-weight: 900;
+                padding: 0 22px;
+                border-right: 1px solid #eee;
+            }
+            p:nth-child(2){
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #999999;
+                display: flex;
+                align-items: center;
+                margin: 0 20px;
+                span:nth-child(1){
+                    color: #999999;
+                }
+                span:nth-child(2){
+                    color: #333;
+                    margin: 0 8px;
+                }
+                img{
+                    display: block;
+                    width: 14px;
+                    height:14px;
+                }
+            }
+        }
+        //欧赔预测
+        .table{
+            width: 100%;
+            height: 100%;
+            border-top: 1px solid #eee;
+            .head{
+                height: 40px;
+                background-color: #f7f7f9;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #999999;
+            }
+            .body{
+                height: 80px;
+                background-color: #fff;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #333333;
+                div{
+                    flex-direction: column;
+                    p{
+                        width: 100%;
+                        border-bottom:  1px solid #eee;
+                    }
+                    P:nth-child(1){
+                        color: #999999;
+                    }
+                    P:nth-child(2){
+                        color: #333333;
+                        border-bottom:  0px;
+                    }
+                }
+                div:nth-child(1){
+                    b{
+                        font-weight: 400;
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        background-color: #f8b72c;
+                        border-radius: 50%;
+                        font-size: 5px;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 5px;
+                        span{
+                            font-size: 10px;
+                            transform: scale(0.7);
+                            line-height: 1px;
+                            margin-left: 1px;
+                            margin-bottom: 2px;
+                        }
+                    }
+                }
+                strong{
+                    padding: 0 5px;
+                    height: 18px;
+                    color: #ffffff;
+                    font-weight: 400;
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .hong{
+                    background-color: #ef3030;
+                }
+                .lu{
+                    background-color: #25d542;
+                }
+            }
+            .public{
+                display: flex;
+                border-bottom: 1px solid #eee;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 1px solid #eee;
+                    p{
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        span{
+                            flex: 1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+                div:nth-child(1){
+                    width: 193px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                }
+                div:nth-child(2){
+                    width: 77px;
+                }
+                div:nth-child(3){
+                    width: 245px;
+                }
+                div:nth-child(4){
+                    width: 105px;
+                }
+                div:nth-child(5){
+                    width: 102px;
+                }
+                div:nth-child(6){
+                    width: 238px;
+                }
+                div:nth-child(7){
+                    flex: 1;
+                }
+            }
+        }
+        //让球盘预测
+        .tables{
+            width: 100%;
+            height: 100%;
+            border-top: 1px solid #eee;
+            .head{
+                height: 40px;
+                background-color: #f7f7f9;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #999999;
+                div:nth-child(1){
+                    b{
+                        font-weight: 400;
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        background-color: #f8b72c;
+                        border-radius: 50%;
+                        font-size: 5px;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 5px;
+                        span{
+                            font-size: 10px;
+                            transform: scale(0.7);
+                            line-height: 1px;
+                            margin-left: 1px;
+                            margin-bottom: 2px;
+                        }
+                    }
+                }
+            }
+            .body{
+                height: 40px;
+                background-color: #fff;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #333333;
+                div{
+                    flex-direction: column;
+                    p{
+                        width: 100%;
+                    }
+                    P:nth-child(1){
+                        color: #999999;
+                    }
+                    P:nth-child(2){
+                        color: #333333;
+                        border-bottom:  0px;
+                    }
+                }
+                div:nth-child(1){
+                    img{
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        margin: 0 5px;
+                    }
+                }
+                strong{
+                    padding: 0 5px;
+                    height: 18px;
+                    color: #ffffff;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 2px;
+                    justify-content: center;
+                }
+                b{
+                    color: #333333;
+                }
+                .hong{
+                    background-color: #ef3030;
+                }
+                .lu{
+                    background-color: #25d542;
+                }
+            }
+            .public{
+                display: flex;
+                border-bottom: 1px solid #eee;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 1px solid #eee;
+                    p{
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        span{
+                            flex: 1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+                div:nth-child(1){
+                    width: 193px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                }
+                div:nth-child(2){
+                    width: 406px;
+                }
+                div:nth-child(3){
+                    width: 406px;
+                }
+                div:nth-child(4){
+                    flex: 1;
+                }
+            }
+        }
+        //角球预测
+        .corner{
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .conents{
+                flex: 1;
+                height: 100%;
+                border: solid 1px #f0f0f0;
+                .headers{
+                    width: 100%;
+                    height: 46px;
+                    display: flex;
+                    align-items: center;
+                    background-color: #ffffff;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #333333;
+                    img{
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        margin: 0 7px 0 20px;
+                    }
+                }
+                .head{
+                    height: 36px;
+                    display: flex;
+                    border-top: 1px solid #eee;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #333333;
+                    p{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-right: 1px solid #eee;
+                    }
+                    p:nth-child(1){
+                        width: 75px;
+                    }
+                    .flex{
+                        flex: 1;
+                    }
+                    p:nth-last-child(1){
+                        width: 120px;
+                        border: 0;
+                    }
+                }
+                .zhu{
+                    background-color: #fff7f6;
+                    color: #999999;
+                    p:nth-child(1){
+                        color: #333;
+                    }
+                }
+                .ke{
+                    background-color: #f5fdfe;
+                    color: #999999;
+                    p:nth-child(1){
+                        color: #333;
+                    }
+                }
+            }
+        }
+        //波胆预测
+        .last{
+            width: 100%;
+            height: 100%;
+            border: solid 1px #eeeeee;
+            .head{
+                width: 100%;
+                height: 68px;
+                border-bottom: solid 1px #eeeeee;
+                background-color: #f7f7f9;
+                color: #999999;
+            }
+            .body{
+                width: 100%;
+                height: 40px;
+                background-color: #ffffff;
+                border-bottom: solid 1px #eeeeee;
+                color: #333333;
+            }
+            .public{
+                display: flex;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                p{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    border-right: 1px solid #eee;
+                }
+                .flex{
+                    flex: 1;
+                }
+                p:nth-child(1){
+                    width: 163px;
+                }
+                p:nth-last-child(1){
+                    width: 52px;
+                }
+            }
+            .body:nth-last-child(1){
+                border-bottom: 0;
+            }
+        }
+        .foot{
+            width: 100%;
+            height: 113px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            .left{
+                height: 60px;
+                display: flex;
+                margin-left: 28px;
+                div{
+                    width: 115px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #777777;
+                    border: solid 2px #dcdcdc;
+                    cursor: pointer;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        display: none;
+                    }
+                }
+                .a{
+                    border-right: solid 2px #fff;
+                }
+                .select{
+                    border: solid 2px #f55e53;
+                    color: #f55e53;
+                    img{
+                        display: block;
+                    }
+                }
+            }
+            .center{
+                width: 610px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding-left: 36px;
+                p:nth-child(1){
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #999999;
+                    line-height: 23px;
+                }
+                p:nth-child(2){
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 23px;
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #999999;
+                position: absolute;
+                right: 40px;
+                div{
+                    margin-right: 10px;
+                }
+                div:nth-child(2){
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        height: 25px;
+                        display: flex;
+                        align-items: center;
+                        span{
+                            margin: 0 5px;
+                            display: block;
+                            height: 9px;
+                        }
+                        .a{
+                            background-color: #feb17b;
+                        }
+                        .b{
+                            background-color: #adadad;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//每个小模块的tit文字
+.tit{
+    width: 100%;
+    height: 45px;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 16px;
+    color: #7c7e88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}

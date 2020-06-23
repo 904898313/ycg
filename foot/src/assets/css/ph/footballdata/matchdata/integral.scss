@@ -1,0 +1,255 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+}
+.tou{
+    width: 100%;
+	height: .88rem;
+    background-color: #000047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-family: PingFang-SC-Bold;
+	font-size: .34rem;
+	color: #ffffff;
+}
+//场地导航
+.nav{
+    width: 100%;
+    height: .88rem;
+    background-color: #edeef3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-family: PingFang-SC-Bold;
+	font-size: .3rem;
+	color: #919195;
+    opacity: 0.8;
+
+    .contents{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .def{
+            width: .08rem;
+            height: .08rem;
+            background-color: #202021;
+            margin-right: .13rem;
+            // visibility: hidden;
+            display: none
+        }
+        .navtit{
+            // visibility:visible;
+            display: block;
+        }
+        .navtext{
+            font-family: PingFang-SC-Heavy;
+            font-size: .36rem;
+            color: #202021;
+            font-weight: 900;
+        }
+    }
+    .contents:nth-last-child(1){
+        width: 1.65rem;
+        margin-right: .14rem;
+    }
+    .contents:nth-last-child(2){
+        width: 1.65rem;
+    }
+    .contents:nth-child(1){
+        margin-left: .14rem;
+       flex: 1;
+    }
+    .contents:nth-child(2){
+       flex: 1;
+    }
+    .contents:nth-child(3){
+       flex: 1;
+    }
+    .contents:nth-child(4){
+       flex: 1;
+    }
+}
+//列表头部
+.head{
+	width: 100%;
+	height: .8rem;
+    background-color: #ffffff;
+    font-family: PingFang-SC-Medium;
+	font-size: .26rem;
+	color: #999999;
+}
+//列表详情
+.bigbody{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .body{
+        width: 100%;
+        height: .88rem;
+        font-family: PingFang-SC-Medium;
+        font-size: .24rem;
+        color: #202021;
+        border-bottom: .01rem solid #f0efeb;
+    }
+    .title{
+        position: absolute;
+        padding: 0 .1rem;
+        height: .36rem;
+        border-radius: 0px 18px 18px 0px;
+        top: -.18rem;
+        font-family: PingFang-SC-Medium;
+        font-size: .2rem;
+        color: #ffffff;
+        display: none;
+    }
+}
+//公用
+.list{
+    display: flex;
+    align-items: center;
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p:nth-child(1){
+        width: .9rem;
+    }
+    p:nth-child(2){
+        width: 2.2rem;
+        justify-content: flex-start;
+        img{
+            display: block;
+            width: .3rem;
+            height: .3rem;
+            background-color: #401b22;
+            border-radius: 2px;
+            margin-right: .08rem ;
+        }
+    }
+    p:nth-child(3){
+        flex: 1;
+    }
+    p:nth-child(4){
+        width: 1.2rem;
+    }
+    p:nth-child(5){
+        width: 1.2rem;
+    }
+    p:nth-child(6){
+        flex: 1;
+    }
+    p:nth-child(7){
+        flex: 1;
+    }
+}
+// 颜色变化用样式做的 / 下5行
+.body0{
+    .body{
+        background-color: #f1dcd7;
+    }
+    .title{
+        display: block;
+        background-color: #ff9966;
+    }
+}
+.body1{
+    .body{
+        background-color: #bde7f5;
+    }
+    .title{
+        display: block;
+        background-color: #00ccff;
+    }
+}
+.body2{
+    .body{
+        background-color: #deedd8;
+    }
+    .title{
+        display: block;
+        background-color: #a2e76f;
+    }
+}
+.body3{
+    .body{
+        background-color: #ffffff;
+    }
+}
+.body4{
+    .body{
+        background-color: #e1e0e5;
+    }
+    .title{
+        display: block;
+        background-color: #b1a7a7;
+    }
+}
+
+//bg
+.bg{
+    width: 100%;
+    height: .2rem;
+    background-color: #eeeeee;
+}
+    //英超赛程赛果
+    .content-bigbox{
+        width: 100%;
+        header{
+            width: 100%;
+            height: .81rem;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eeeeee;
+            span:nth-child(1){
+                font-size: .3rem;
+                line-height: .26rem;
+                color: #202021;
+                border-left:  .06rem solid $ffc002;
+                padding-left: .1rem;
+                margin-left: .24rem;
+                font-family: PingFang-SC-Bold;
+                font-weight: 900;
+
+            }
+            span:nth-child(2){
+                font-size: .24rem;
+                line-height: .26rem;
+                letter-spacing: .01rem;
+                color: #999999;
+                margin-right: .24rem;
+            }
+        }
+        // 遍历内容区
+        .content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .contents{
+                width: 50%;
+                height: .56rem;
+                display: flex;
+                align-items: center;
+                p{
+                    height: .3rem;
+                    line-height: .3rem;
+                    font-family: PingFang-SC-Medium;
+                    font-size: .28rem;
+                    color: #202021;
+                    text-indent: .24rem;
+                    width: 100%;
+                }
+            }
+            .contents:nth-child(odd){
+                p{
+                    border-right: 1px solid #cbcbcb;
+                }
+            }
+        }
+    }

@@ -1,0 +1,317 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    .header{
+            width: 1200px;
+            height: 50px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: #777777;
+            span:nth-last-child(1){
+                font-size: 12px;
+                color: $themeColor;
+                cursor: pointer;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 5px;
+                }
+            }
+    }
+}
+.content{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    .left{
+        width: 850px;
+        height: 100%;
+        background-color: #ffffff;
+        header{
+            width: 100%;
+            height: 52px;
+            border-bottom: 3px solid #e8e8e8;
+            display: flex;
+            align-items: center;
+            .text{
+                height: 100%;
+                border-bottom:3px solid #ffc201;
+                display: flex;
+                align-items: center;
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 16px;
+                color: #333333;
+                font-weight: 900;
+                margin-top: 3px;
+                padding-left: 20px;
+                padding-right: 6px;
+            }
+        }
+        .chart{
+            width: 100%;
+            height: 100%;
+            .nav{
+                width: 100%;
+                height: 14px;
+                margin-top: 15px;
+                
+                line-height: 14px;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #aaaaaa;
+                display: flex;
+                p{
+                    display: flex;
+                    .select{
+                        color: #4280c9;
+                        font-weight: 900;
+                    }
+                    strong{
+                        font-weight: 400;
+                        color: #eeeeee;
+                    }
+                }
+                span{
+                    padding: 0 20px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+            }
+            .contents{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                .big{
+                    width: 25%; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 24px;  
+                    .small{
+                        width: 192px;  
+                        height: 185px;   
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border: solid 1px #eeeeee;
+                        .imgbox{     
+                            width: 100%; 
+                            height: 108px; 
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            cursor: pointer;
+                            p{
+                                width: 100%;
+                                height: 26px;
+                                background-color: #000000;
+                                background:rgba(0,0,0,0.4);
+                                position: absolute;
+                                bottom: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-end;
+                                font-family: MicrosoftYaHei;
+                                font-size: 13px;
+                                line-height: 28px;
+                                color: #ffffff;
+                                img{
+                                    width: 19px;
+                                    height: 16px;
+                                }
+                                span{
+                                    margin-right: 10px;
+                                    margin-left: 4px;
+                                }
+                            }
+                        }
+                        .text{
+                            flex: 1;
+                            padding: 0 10px;
+                            p:nth-child(1){
+                                margin-top: 10px;
+                                font-family: MicrosoftYaHei;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #333333;
+                            }
+                            p:nth-child(2){
+                                font-family: MicrosoftYaHei;
+                                font-size: 14px;
+                                color: #999999;
+                                margin-top: 6px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                span:nth-child(2){
+                                    display: flex;
+                                    align-items: center;
+                                    img{
+                                        margin-right: 4px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //分页
+            .paging{
+                width: 100%;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 22px;
+            }
+        }
+    }
+    .right{
+        width: 330px;
+        height: 100%;
+        // 英超最新图集
+        .atlas{
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            header{
+                width: 100%;
+                height: 52px;
+                border-bottom: 3px solid #e8e8e8;
+                display: flex;
+                align-items: center;
+                .text{
+                    height: 100%;
+                    border-bottom:3px solid #ffc201;
+                    display: flex;
+                    align-items: center;
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 16px;
+                    color: #333333;
+                    font-weight: 900;
+                    margin-top: 3px;
+                    padding-left: 20px;
+                    padding-right: 6px;
+                }
+            }
+            //英超最新图集
+            .new{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 10px 0;
+                .news{
+                    width: 270px;
+                    height: 180px;
+                    position: relative;
+                    margin: 10px 0;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    p{
+                        width: 100%;
+                        height: 26px;
+                        background-color: #000000;
+                        background:rgba(0,0,0,0.4);
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-family: MicrosoftYaHei;
+                        font-size: 13px;
+                        line-height: 28px;
+                        color: #ffffff;
+                        img{
+                            width: 19px;
+                            height: 16px;
+                        }
+                        span:nth-child(1){
+                            margin-left: 10px;
+                        }
+                        span:nth-child(2){
+                            margin-right: 10px;
+                            margin-left: 4px;
+                            display: flex;
+                            align-items: center;
+                            img{
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            //英超热门图集
+            .hot{
+                width: 100%;
+                height: 100%;
+                .hots{
+                    width: 100%;
+                    height: 35px;
+                    padding: 0 16px;
+                    border-bottom: 1px dashed #eeeeee;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    p:nth-child(1){
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        span:nth-child(1){
+                            width: 14px;
+                            height: 14px;
+                            background-color: #bdbdbd;
+                            border-radius: 2px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-family: MicrosoftYaHei;
+                            font-size: 12px;
+                            line-height: 4px;
+                            color: #ffffff;
+                        }
+                        span:nth-child(2){
+                            width: 200px;
+                            font-family: MicrosoftYaHei;
+                            font-size: 12px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            letter-spacing: 0px;
+                            color: #555555;
+                            margin-left: 5px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        
+                    }
+                    p:nth-child(2){
+                        font-family: MicrosoftYaHei;
+                        font-size: 12px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        line-height: 23px;
+                        letter-spacing: 0px;
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+}

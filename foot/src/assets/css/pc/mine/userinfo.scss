@@ -1,0 +1,228 @@
+.title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #999999;
+    line-height: 50px;
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  .btnEdit {
+    border: none;
+    width: 150px;
+    height: 38px;
+    font-size: 16px;
+    color: #999999;
+  }
+}
+
+.info {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  background: url('~@/assets/images/mine/bg@2x.png');
+  padding-bottom: 20px;
+
+  .info-top {
+    display: flex;
+
+    .imgs {
+      margin-left: 30px;
+      width: 120px;
+      height: 120px;
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .hoverimg {
+      position: absolute;
+      width: 120px;
+      border-radius: 50%;
+      height: 120px;
+      top: 24px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+      opacity: .7;
+      left: 30px;
+      display: flex;
+
+      i {
+        color: #fff;
+        font-size: 40px;
+      }
+
+      span {
+        color: #fff;
+      }
+    }
+
+
+    .usermid {
+      margin-top: 33px;
+      margin-left: 17px;
+
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+        display: flex;
+        align-items: center;
+
+        span {
+          padding-right: 8px;
+          line-height: 20px;
+        }
+
+        .editImg {
+          margin-left: 10px;
+        }
+
+        .editname {
+          display: flex;
+          margin-left: 20px;
+
+          .nameipt {
+            width: 150px;
+            border: 1px #232323 solid;
+            font-size: 16px;
+            font-weight: normal;
+            text-indent: 10px;
+          }
+
+          .submit {
+            border-radius: 12px;
+            font-size: 12px;
+            background-color: #30303d;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .leva {
+        display: flex;
+        align-items: center;
+        height: 40px;
+
+        .progress {
+          width: 163px;
+          margin-right: 50px;
+          margin-left: 10px;
+        }
+
+        :nth-child(1) {
+          font-size: 18px;
+          color: #999999;
+        }
+
+        :nth-child(3) {
+          color: $ffc002;
+          font-size: 16px;
+        }
+      }
+
+      .number {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+        }
+
+        .qiubi {
+          font-size: 16px;
+          color: rgba(51, 51, 51, 1)
+        }
+
+        .num {
+          color: rgba(51, 51, 51, 1);
+          font-size: 16px;
+          font-weight: bold;
+          margin-right: 20px;
+        }
+
+        .round {
+          font-size: 14px;
+          font-weight: bold;
+          color: #fff !important;
+          border: none;
+          background-color: #30303d;
+          width: 64px;
+        }
+      }
+    }
+
+    .qiandao {
+      position: absolute;
+      right: 32px;
+      top: 26px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        width: 73px;
+        margin-left: 5px;
+        margin-top: 5px;
+        height: 24px;
+        background-color: #e5ac00;
+        border-radius: 12px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .info-mid {
+    width: 100%;
+    margin-top: 40px;
+
+    .titles {
+      padding-left: 30px;
+
+      .shuoming {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgba(34, 34, 34, 1);
+        padding: 0px 9px;
+        border-left: 4px solid $ffc002;
+      }
+    }
+
+    textarea {
+      outline: none;
+      border: none !important;
+    }
+
+    .textarea {
+      padding: 14px 30px 30px 30px;
+      border: none !important;
+    }
+
+  }
+}
+
+.bgimg {
+  width: 910px;
+  height: 160px;
+  margin-top: 18px;
+}

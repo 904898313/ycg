@@ -1,0 +1,257 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    background-color: #edeef3;
+}
+
+//100线
+.public{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    margin-bottom: .2rem;
+    header{
+        width: 100%;
+        height: .88rem;
+        border-bottom: .01rem solid #eeeeee;
+        font-family: PingFang-SC-Bold;
+        font-size: .32rem;
+        color: #333333;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header-tit{
+            margin: 0 .24rem;
+            display: flex;
+            align-items: center;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            font-family: PingFang-SC-Medium;
+            font-size: .26rem;
+            line-height: 34px;
+            color: #202021;
+            // font-weight: 500;
+            p{
+                display: flex;
+                align-items: center;
+                margin-right: .48rem;
+                img{
+                    margin-left: 0 .1rem;
+                }
+            }
+        }
+    }
+    // 场均数据统计
+    .data{
+        width: 100%;
+        height: 1.85rem;
+        display: flex;
+        align-items: center;
+        .datas{
+            flex: 1;
+            height: 1.1rem;
+            border-right: .01rem solid #dcdcdc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            p:nth-child(1){
+                font-family: MontserratAlternates-Medium;
+                font-size: .26rem;
+                line-height: .34rem;
+                color: #f44b23;
+                font-weight: 900;
+            }
+            p:nth-child(2){	
+                font-family: PingFang-SC-Medium;
+                font-size: .26rem;
+                line-height: .34rem;
+                color: #202021;
+                img{
+                    margin-left: .05rem;
+                }
+            }
+            p:nth-child(3){	
+                font-family: PingFang-SC-Medium;
+                font-size: .22rem;
+                line-height: .34rem;
+                color: #999999;
+            }
+
+
+
+
+        }
+        .datas:nth-last-child(1){
+            border: 0;
+        }
+    }
+    // 数据频率统计
+    .list{
+        width: 100%;
+        height: .88rem;
+        padding: 0 .24rem;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: .01rem solid #eeeeee;
+        font-size: .28rem;
+        p:nth-child(1){
+            font-family: PingFang-SC-Medium;
+            color: #202021;
+            display: flex;
+            align-items: center;
+        }
+        p:nth-child(2){
+            font-family: PingFang-SC-Medium;
+            color: #999999;
+            span{
+                font-family: PingFang-SC-Medium;
+                font-size: .28rem;
+                color: #202021;
+            }
+        }
+
+
+
+        img{
+            margin-right: .12rem;
+        }
+    }
+    //数据统计
+    .Statistics{
+        width: 100%;
+        height: 100%;
+        .title{
+            width: 100%;
+            height: 3.52rem;
+            .one{
+                width: 100%;
+                height: 1.22rem;
+                border-bottom: .01rem solid #eeeeee;
+                display: flex;
+                .ones{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    p:nth-child(1){
+                        font-family: PingFang-SC-Bold;
+                        font-size: .3rem;
+                        line-height: .34rem;
+                        color: #202021;
+                        font-weight: 900;
+                    }
+                    p:nth-child(2){
+                        font-family: PingFang-SC-Medium;
+                        font-size: .24rem;
+                        line-height: .34rem;
+                        color: #999999;
+                        margin-top: .03rem;
+                    }
+                }
+            }
+            .two{
+                border: 0;
+            }
+            .text{
+                font-family: PingFang-SC-Medium;
+                font-size: .22rem;
+                line-height: .31rem;
+                color: #999999;
+                margin: 0.2rem .24rem;
+            }
+        }
+        //对阵数据
+        .listbox{
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            .head{
+                width: 100%;
+                height: .58rem;
+                background-color: #f7f7fb;
+                font-family: PingFang-SC-Medium;
+                font-size: .24rem;
+                color: #999999;
+
+            }
+            .body{
+                .tit{
+                    width: 100%;
+                    height: .4rem;
+                    display: flex;
+                    align-items: flex-end;
+                    font-family: PingFang-SC-Medium;
+                    font-size: .22rem;
+                    color: #999999;
+                    p{
+                        padding: 0 .2rem;
+                        height: .22rem;
+                        line-height: .2rem;
+                    }
+                    p:nth-child(2){
+                        border-left: .01rem solid #dddddd;
+                        font-family: PingFang-SC-Medium;
+                        font-size: .22rem;
+                        color: #ff3333;
+                    }
+                }
+                .bodys{
+                    border-bottom: .01rem solid #eeeeee;
+                    width: 100%;
+                    height: .9rem;
+                    background-color: #ffffff;
+                    font-family: PingFang-SC-Medium;
+                    font-size: .26rem;
+                    color: #222222;
+                    p:nth-child(1){
+                        display: flex;
+                        align-content: center;
+                        justify-content: center;
+                        span:nth-child(2){
+                            width: .62rem;
+                            height: .32rem;
+                            background-color: #f55e55;
+                            line-height: .32rem;
+                            text-align: center;
+                            font-family: MontserratAlternates-Medium;
+                            font-size: .24rem;
+                            color: #ffffff;
+                            font-weight: 900;
+                            margin: 0 .2rem;
+                        }
+                    }
+                }
+            }
+            //公用
+            .public{
+                display: flex;
+                align-items: center;
+                p{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                p:nth-last-child(1){
+                    width: 1.4rem;
+                }
+                p:nth-last-child(2){
+                    width: .96rem;
+                }
+                p:nth-last-child(3){
+                    width: 1.58rem;
+                }
+                p:nth-child(1){
+                    flex:1;
+                }
+            }
+        }
+    }
+}

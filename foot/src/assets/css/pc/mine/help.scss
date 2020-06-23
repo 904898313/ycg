@@ -1,0 +1,53 @@
+.help {
+  width: 910px;
+  margin-top: 21px;
+
+  .helpcenter {
+    .title {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+
+      span {
+        color: #202021;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 16px;
+        border-left: 5px solid #f7c414;
+        padding-left: 15px;
+      }
+    }
+
+    .helpList {
+      padding: 0px 30px;
+      background-color: #fff;
+
+      p {
+        font-size: 15px;
+        color: #202021;
+        font-weight: bold;
+      }
+
+      .wen {
+        width: 16px;
+        height: 16px;
+        background-color: #e74d4f;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #fff;
+        margin-right: 6px;
+      }
+
+    }
+
+    .pagination {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+}

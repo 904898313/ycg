@@ -1,0 +1,449 @@
+.content-smallbox{
+    width: 1200px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: space-between;
+    // 左
+    .left{
+        width: 840px;
+        height: 100%;
+        // 赛程时间表
+        .time{
+            width: 100%;
+            height: 60px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            display: flex;
+            .time-title{
+                width: 135px;
+                height: 60px;
+                background-color: $ffc002;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #efefef;
+            }
+            .time-num{
+                flex: 1;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                background-color: #ffffff;
+                font-size: 14px;
+                line-height: 20px;
+                color: #202021;
+                div{
+                    width: 37px;
+                    height: 50%;
+                    text-align: center;
+                    line-height: 30px;
+                    border: 1px solid #efefef;
+                    cursor: pointer;
+                }
+                .selections{
+                    color: #ffffff;
+                    background-color: $ffc002;
+                }
+            }
+        }
+        // 公用
+        .result{
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            header{
+                width: 100%;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                p{
+                    width: 100%;
+                    height: 22px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 20px;
+                    border-left: 6px solid $ffc002;
+                    span:nth-child(1){
+                        font-size: 20px;
+                        color: #202021;
+                        font-weight: 900;
+                        .total{
+                            font-family: MicrosoftYaHei;
+                            font-size: 14px;
+                            color: #202021;
+                            font-weight: 400;
+                        }
+                    }
+                    span:nth-child(2){
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #999999;
+                        cursor: pointer;
+                    }
+                }
+            }
+            // 赛果
+            .body{
+                width: 100%;
+                padding: 0 20px;
+                .body-title{
+                    width: 100%;
+                    height: 40px;
+                    background-color: #f7f7fb;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    font-size: 14px;
+                    color: #999999;
+                    span{
+                        text-align: center;
+                    }
+                }
+                .data{
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    color: #666666;
+                    border-bottom:1px solid #f5f5f5;;
+                    span{
+                        text-align: center;
+                        line-height: 50px;
+                        height: 50px;
+                    }
+                    .colour{
+                        color: #202021;
+                    }
+                }
+                .distance{
+                    span{
+                        width: 100px;
+                    }
+                    span:nth-child(1){
+                        width: 50px;
+                    }
+                    span:nth-child(3){
+                        width: 110px;
+                    }
+                    span:nth-child(4){
+                        width: 55px;
+                    }
+                    span:nth-child(5){
+                        width: 110px;
+                    }
+                    span:nth-child(8){
+                        width: 80px;
+                    }
+                    span:nth-child(9){
+                        width: 95px;
+                    }
+                }
+            }
+            //积分榜
+            .integral{
+                padding: 0 20px;
+                .title{
+                    width: 100%;
+                    height: 40px;
+                    background-color: #f7f7fb;
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    color: #999999;
+                }
+
+                .distance{
+                    span{
+                        width: 52px;
+                        text-align: center;
+                    }
+                    span:nth-child(1){
+                        width: 50px;
+                    }
+                    span:nth-child(2){
+                        width: 120px;
+                        text-align:left;
+                    }
+                    span:nth-child(10){
+                        width: 66px;
+                    }
+                    span:nth-child(11){
+                        width: 66px;
+                    }
+                    span:nth-child(12){
+                        width: 66px;
+                    }
+                    span:nth-child(13){
+                        font-weight: 900;
+                    }
+                }
+
+                .title1{
+                    width: 100%;
+                    height: 50px;
+                    background-color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    color: #202021;
+                    border-bottom: 1px solid #f5f5f5;
+                    span:nth-child(1){
+                        font-family: Montserrat-Bold;
+                        font-size: 14px;
+                        color: #999999;
+                        line-height: 18px;
+                        text-align: center;
+                            span{
+                                display: block;
+                                margin: 0 auto;
+                                width: 18px;
+                                height: 18px;
+                                border-radius: 4px 0px 4px 0px;
+                            }
+                    }
+                    span:nth-child(4){
+                        color: #f55e53;
+                        font-weight: 900;
+                    }
+                    span:nth-child(10){
+                        color: #f55e53;
+                        font-weight: 900;
+                    }
+                }
+            }
+            //射手榜
+            .shooter{
+                width: 100%;
+                padding: 0 20px;
+                font-size: 14px;
+                .shooter-title{
+                    width: 100%;
+                    height: 40px;
+                    background-color: #f7f7fb;
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    span{
+                        line-height: 40px;
+                        height: 100%;
+                        color: #999999;
+                    }
+                }
+                .shooter-body{
+                    width: 100%;
+                    height: 50px;
+                    background-color: #ffffff;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #f5f5f5;
+                    text-align: center;
+                    span{
+                        line-height: 50px;
+                        height: 100%;
+                        color: #202021;
+                    }
+                    span:nth-child(4){
+                        color: $themeColor;
+                    }
+                    span:nth-child(1){
+                        font-family: Montserrat-Bold;
+                        color: #999999;
+                    }
+
+                }
+                // 公共距离
+                .distance{
+                    span{
+                        width: 94px;
+                    }
+                    span:nth-child(1){
+                        width: 50px;
+                    }
+                    span:nth-child(2){
+                        width: 160px;
+                    }
+                    span:nth-child(3){
+                        width: 84px;
+                    }
+                    span:nth-child(4){
+                        width: 152px;
+                    }
+                    span:nth-child(8){
+                        width: 84px;
+                    }
+                }
+            }
+            // 英超进球总数及单双统计数据列表
+            .total{
+                width: 100%;
+                padding: 0 20px;
+                font-size: 14px;
+                .total-title{
+                    width: 100%;
+                    height: 40px;
+                    background-color: #f7f7fb;
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    span{
+                        line-height: 40px;
+                        height: 100%;
+                        color: #999999;
+                    }
+                }
+                .total-body{
+                    width: 100%;
+                    height: 50px;
+                    background-color: #ffffff;
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    border-bottom: 1px solid #f5f5f5;
+                    span{
+                        line-height: 50px;
+                        height: 100%;
+                        color: #202021;
+                    }
+                    span:nth-child(9){
+                        color: red;
+                    }
+                    span:nth-child(10){
+                        color: $themeColor;
+                    }
+                    span:nth-child(11){
+                        color: $themeColor;
+                    }
+                }
+                // 公共距离
+                .distance{
+                    span{
+                        width: 63px;
+                    }
+                    span:nth-child(1){
+                        padding-left: 30px;
+                        width: 126px;
+                        text-align: start;
+                    }
+                }
+            }
+            // 英超进球总数及单双统计数据列表
+            .common{
+                width: 100%;
+                padding: 0 20px;
+                font-size: 14px;
+                .common-title{
+                    width: 100%;
+                    height: 40px;
+                    background-color: #f7f7fb;
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    padding: 0 33px 0 0px;
+                    span{
+                        width: 80px;
+                        line-height: 40px;
+                        height: 100%;
+                        color: #999999;
+                    }
+                }
+                .common-body{
+                    width: 100%;
+                    height: 50px;
+                    background-color: #ffffff;
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    border-bottom: 1px solid #f5f5f5;
+                    padding: 0 33px 0 0px;
+                    span{
+                        width: 80px;
+                        line-height: 50px;
+                        height: 100%;
+                        color: #202021;
+                    }
+                    span:nth-child(1){
+                        font-family: Montserrat-Bold;
+                        font-size: 14px;
+                        color: #999999;
+                    }
+                }
+                // 公共距离
+                .distance{
+
+                }
+            }
+        }
+    }
+    //右
+    .right{
+        width: 330px;
+        height: 100%;
+        background-color: #f1f4f9;
+        // 数据统计 复用
+        .repeat{
+            width: 100%;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            header{
+                width: 100%;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                font-weight: 900;
+                font-size: 20px;
+                color: #202021;
+                border-bottom: 1px solid #eeeeee;
+                span{
+                    padding-left: 20px;
+                }
+                img{
+                    margin-left: 5px;
+                }
+            }
+            .repeat-list{
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+                font-size: 16px;
+                color: #202021;
+                p{
+                    height: 35px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 16px;
+                        height: 16px;
+                        background-color: skyblue;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            // 英超各赛季数据回顾
+            .repeat-box{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                padding: 15px 10px;
+                flex-wrap: wrap;
+                div{
+                        height: 36px;
+                        background-color: #f3f3f8;
+                        font-size: 14px;
+                        line-height: 36px;
+                        color: #202021;
+                        text-align: center;
+                        margin: 5px 5.5px;
+                        cursor: pointer;
+                        padding: 0 12px;
+                }
+            }
+        }
+    }
+}

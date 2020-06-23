@@ -1,0 +1,177 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+// 转会记录
+.record{
+    width: 100%;
+	height: 1.67rem;
+    background-color: #ffffff;
+    border-bottom: solid .01rem #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left{
+        width: 1.88rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p:nth-child(1){
+            font-family: PingFang-SC-Medium;
+            font-size: .26rem;
+            line-height: .34rem;
+            color: #202021;
+        }
+        p:nth-child(2){
+            font-family: PingFang-SC-Medium;
+            font-size: .24rem;
+            line-height: .34rem;
+            color: #999999;
+            margin-top: .2rem;
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        font-family: PingFang-SC-Medium;
+        font-size: .24rem;
+        line-height: .34rem;
+        color: #202021;
+        div{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img{
+                display: block;
+                width: .7rem;
+                height: .7rem;
+                background-color: red;
+                margin-bottom: .1rem;
+            }
+        }
+        div:nth-child(2){
+            font-family: PingFang-SC-Medium;
+            font-size: .22rem;
+            line-height: .34rem;
+            color: #999999;
+            img{
+                height: auto;
+                width: auto;
+                margin-top: .2rem;
+                margin-bottom: 0;                
+            }
+        }
+    }
+}
+// echarts
+.echarts{
+    width: 100%;
+	height: 3rem;
+	background-color: #404040;
+}
+//100线
+.public{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    margin-bottom: .2rem;
+    header{
+        width: 100%;
+        height: .88rem;
+        border-bottom: .01rem solid #eeeeee;
+        font-family: PingFang-SC-Bold;
+        font-size: .32rem;
+        color: #333333;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            margin: 0 .24rem;
+            display: flex;
+            align-items: center;
+        }
+        span:nth-child(2){
+            font-family: PingFang-SC-Medium;
+            font-size: .24rem;
+            color: #999999;
+            font-weight: 400;
+        }
+    }
+    // 球队荣誉
+    .content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .contents{
+            width: 100%;
+            height: 2.6rem;
+            display: flex;
+            flex-direction: column;
+            padding: 0 .24rem;
+            .head{
+                width: 100%;
+                height: .86rem;
+                font-family: PingFang-SC-Medium;
+                font-size: .28rem;
+                color: #202021;
+                display: flex;
+                align-items: center;
+                text-indent: .24rem;
+                span{
+                    font-family: MontserratAlternates-SemiBold;
+                    font-size: .34rem;
+                    color: #ffc002;
+                    font-weight: 900;
+                    text-indent: 0;
+                    margin:0 .1rem;
+                }
+            }
+            .body{
+                width: 100%;
+                height: 1.75rem;
+                padding: 0 .24rem;
+                display: flex;
+                border-bottom: .01rem solid #eeeeee;
+                .bodys{
+                    width: auto;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: .5rem;
+                    img{
+                        display: block;
+                        width: .5rem;
+                        height: .78rem;
+                        background-color: red;
+                    }
+                    p:nth-child(2){
+                        font-family: PingFang-SC-Medium;
+                        font-size: .22rem;
+                        color: #333333;
+                    }
+                    p:nth-child(3){
+                        font-family: PingFang-SC-Medium;
+                        font-size: .22rem;
+                        color: #cccccc;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.bg{
+    background-color: #edeef3;
+    width: 100%;
+    height: .2rem;
+}

@@ -1,0 +1,101 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    header{
+        width: 100%;
+        height: .8rem;
+        background-color: #ffffff;
+        font-family: PingFang-SC-Bold;
+        font-size: .3rem;
+        color: #202021;
+        text-indent: .24rem;
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+    }
+    .head{
+        height: .52rem;
+        background-color: #f7f7fb;
+        font-family: PingFang-SC-Medium;
+        font-size: .24rem;
+        color: #999999;
+        p:nth-child(2){
+            flex: 1;
+            justify-content: flex-start;
+            text-indent: .8rem;
+        }
+        p:nth-child(4){
+            flex: 1;
+            justify-content: flex-start;
+            text-indent: .8rem;
+        }
+    }
+    .body{
+        height: .95rem;
+        background-color: #ffffff;
+        font-family: PingFang-SC-Medium;
+        font-size: .24rem;
+        color: #202021;
+        border-bottom: .01rem solid #eeeeee;
+        p:nth-child(1){
+            flex-direction: column;
+            font-family: PingFang-SC-Medium;
+            font-size: .22rem;
+            color: #999999;
+        }
+    }
+    .public{
+        width: 100%;
+        display: flex;
+        padding: 0 .24rem;
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p:nth-child(1){
+            width: .8rem;
+        }
+        p:nth-child(2){
+            flex: 1;
+            justify-content: flex-start;
+            img{
+                display: block;
+                width: .3rem;
+                height: .3rem;
+                margin-right: .1rem;
+                margin-left: .4rem;
+            }
+        }
+        p:nth-child(3){
+            width: .5rem;
+        }
+        p:nth-child(4){
+            flex: 1;
+            justify-content: flex-start;
+            img{
+                display: block;
+                width: .3rem;
+                height: .3rem;
+                margin-right: .1rem;
+                margin-left: .4rem;
+            }
+        }
+        p:nth-last-child(1){
+            width: 1rem;
+        }
+    }
+}
+
+
+
+.bg{
+    width: 100%;
+    height: .2rem;
+    background-color: #edeef3;
+}

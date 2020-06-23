@@ -1,0 +1,65 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    .big{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: .1rem 0;  
+        border-radius: .04rem;
+        
+        .small{
+            width: 3.41rem;  
+            height: 2.95rem;   
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: solid .01rem #eeeeee;
+            .imgbox{     
+                width: 100%; 
+                height: 1.92rem; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: skyblue;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .time{
+                    position: absolute;
+                    width: .95rem;
+                    height: .37rem;
+                    background-color: #000000;
+                    // opacity: 0.4;
+                    background-color:rgba(0,0,0,0.4);
+                    bottom: .1rem;
+                    left: .1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: PingFang-SC-Medium;
+                    font-size: .18rem;
+                    color: #ffffff;
+                    img{
+                        width: .2rem;
+                        height: .2rem;
+                        margin: 0 .08rem;
+                    }
+                }
+            }
+            .text{
+                width:100%;
+                font-family: PingFang-SC-Medium;
+                font-size: .28rem;
+                color: #202021;
+                padding: .15rem;
+            }
+        }
+    }
+}

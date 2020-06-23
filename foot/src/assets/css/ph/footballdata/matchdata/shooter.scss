@@ -1,0 +1,133 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+}
+.tou{
+    width: 100%;
+	height: .88rem;
+    background-color: #000047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-family: PingFang-SC-Bold;
+	font-size: .34rem;
+	color: #ffffff;
+}
+    //英超历届射手榜数据查询
+    .content-bigbox{
+        width: 100%;
+        header{
+            width: 100%;
+            height: .81rem;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eeeeee;
+            span:nth-child(1){
+                font-size: .3rem;
+                line-height: .26rem;
+                color: #202021;
+                border-left:  .06rem solid $ffc002;
+                padding-left: .1rem;
+                margin-left: .24rem;
+                font-family: PingFang-SC-Bold;
+                font-weight: 900;
+
+            }
+            span:nth-child(2){
+                font-size: .24rem;
+                line-height: .26rem;
+                letter-spacing: .01rem;
+                color: #999999;
+                margin-right: .24rem;
+            }
+        }
+        // 历届射手榜数据查询
+        .content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .contents{
+                width: 50%;
+                height: .56rem;
+                display: flex;
+                align-items: center;
+                p{
+                    height: .3rem;
+                    line-height: .3rem;
+                    font-family: PingFang-SC-Medium;
+                    font-size: .28rem;
+                    color: #202021;
+                    text-indent: .24rem;
+                    width: 100%;
+                }
+            }
+            .contents:nth-child(odd){
+                p{
+                    border-right: 1px solid #cbcbcb;
+                }
+            }
+        }
+        //2019-2020射手榜
+        .head{
+            height: .7rem;
+            background-color: #f0f0f4;
+            color: #999999;
+        }
+        .body{
+            height: .8rem;
+            background-color: #ffffff;
+            color: #202021;
+            P:nth-child(1){
+                font-family: Montserrat-Bold;
+                color: #202021;
+                font-weight: 900;
+            }
+            P:nth-child(4){
+                font-family: PingFang-SC-Bold;
+                color: #2fcc86;
+                font-weight: 900;
+            }
+
+
+        }
+        .list{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: .24rem;
+            font-family: PingFang-SC-Medium;
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p:nth-child(1){
+                width: .94rem;
+                margin-right: .3rem;
+            }
+            p:nth-child(2){
+                flex: 1;
+                justify-content: flex-start;
+            }
+            p:nth-child(3){
+                flex: 1;
+                justify-content: flex-start;
+                img{
+                    margin-right: .1rem;
+                }
+            }
+            p:nth-last-child(1){
+                width: 1.2rem;
+            }
+        }
+    }
+    //bg
+    .bg{
+        width: 100%;
+        height: .2rem;
+        background-color: #edeef3;
+    }

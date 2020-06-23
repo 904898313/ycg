@@ -1,0 +1,97 @@
+.soccergame{
+  background-color: #ffffff;
+  .gameBox{
+    padding: 0 0.24rem 0.24rem 0.24rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .gameItem{
+      width: 3.41rem;
+      height: 2.28rem;
+      border: solid 1px #eeeeee;
+      margin-top: 0.24rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .item_status{
+        padding: 0 0.2rem;
+        margin-top: 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        >a{
+          font-size: 0.24rem;
+          font-weight: bold;
+          color: #2fcc86;
+        }
+        >span{
+          font-size: 0.24rem;
+          color: #666666;
+        }
+      }
+      .item_team{
+        padding: 0 0.2rem;
+        .tean_row{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          .row_lf{
+            display: flex;
+            align-items: center;
+            .team_icon{
+              width: 0.28rem;
+              height: 0.28rem;
+            }
+            >span{
+              font-size: 0.22rem;
+              color: #333333;
+              margin-left: 0.1rem;
+            }
+          }
+          >span{
+            font-size: 0.22rem;
+            color: #202021;
+            margin-right: 0.15rem;
+          }
+          .team_triangle{
+            position: absolute;
+            right: -0.2rem;
+            top: 0.1rem;
+            width: 0;
+            height: 0;
+            border-width: 0.05rem;
+            border-style: solid;
+            border-color: transparent #2d2d2d transparent transparent;
+          }
+        }
+        .tean_row:last-child{
+          margin-top: 0.15rem;
+        }
+      }
+      .status_btn{
+        height: 0.54rem;
+        line-height: 0.54rem;
+        text-align: center;
+        background-color: #fafafa;
+        border-top: solid 1px #eeeeee;
+        color: #999999;
+        font-size: 0.24rem;
+      }
+      .status_btn_1{
+        color: #2fcc86;
+      }
+      .status_btn_2{
+        color: #f55e53;
+      }
+    }
+  }
+  .checkMore{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #999999;
+    border-top: solid 1px #eeeeee;
+  }
+}

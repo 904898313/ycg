@@ -1,0 +1,146 @@
+    .bigbox{
+        width:  100%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+    //面包屑
+    header{
+        width: 1200px;
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        line-height: 60px;
+        color: #96969f;
+        span:nth-last-child(1){
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            line-height: 60px;
+            color: $themeColor;
+        }
+        span{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 5px;
+            }
+        }
+    }
+    //对阵信息
+    .against{
+        width: 1200px;
+        height: 150px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        .tit{
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #999999;
+        }
+        .cont{
+            width: 100%;
+            font-family: MicrosoftYaHei;
+            font-size: 18px;
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            .team{
+                display: flex;
+                align-items: center;
+                flex: 1;
+                img{
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background-color: skyblue;
+                    margin: 0 10px;
+                }
+            }
+            .team:nth-child(1){
+                justify-content: flex-end;
+            }
+            .cent{
+                width: 146px;
+                margin: 0 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: MontserratAlternates-SemiBold;
+                font-size: 24px;
+                color: #2fcc87;
+                font-weight: 900;
+                text-align: center;
+            }
+        }
+        .time{
+            width: 146px;
+            height: 23px;
+            background-color: #e6fcf2;
+            border-radius: 12px;
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #2fcc87;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .information{
+            height: 56px;
+            line-height: 56px;
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #333333;
+        }
+    }
+    //导航
+    nav{
+        width: 100%;
+        height: 42px;
+        background-color: #ffffff;
+        border: solid 1px #ededed;
+        .nav{
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .navs{
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #333333;
+                display: flex;
+                align-items: center;
+                margin: 0 30px;
+                cursor: pointer;
+                div{
+                    width: 4px;
+                    height: 4px;
+                    margin-right: 10px;
+                }
+            }
+            .select{
+                font-weight: 900;
+                div{
+                    background-color: #f8b72c;
+                }
+            }
+        }
+    }
+    //组件
+    .component{
+        width: 100%;
+        height: 100%;
+        background-color: #f5f6fa;
+        .components{
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }

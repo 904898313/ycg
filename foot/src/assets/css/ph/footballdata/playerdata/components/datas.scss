@@ -1,0 +1,302 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    background-color: #edeef3;
+}
+// 半线
+.data{
+    padding: 0 .24rem;
+    background-color: #ffffff;
+    margin-bottom:.2rem;
+    header{
+        width: 100%;
+        height: .87rem;
+        display: flex;
+        align-items: center;
+        font-family: PingFang-SC-Bold;
+        font-size: .32rem;
+        color: #333333;
+        font-weight: 900;
+    }
+    //基本信息
+    .databox{
+        width: 100%;
+        height: .8rem;
+        border-top: .01rem solid #eeeeee;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: PingFang-SC-Medium;
+        font-size: .28rem;
+        span:nth-child(1){
+            color: #999999;
+        }
+        span:nth-child(2){
+            color: #202021;
+            display: flex;
+            align-items: center;
+            img{
+                margin: 0 .05rem;
+            }
+        }
+
+    }
+    .all{
+        justify-content: center;
+        font-family: PingFang-SC-Medium;
+        font-size: .24rem;
+        color: #999999;
+    }
+    //曼城俱乐部介绍
+    .text{
+        font-family: PingFang-SC-Medium;
+        font-size: .28rem;
+        color: #202021;
+        padding: .1rem 0 .2rem;
+        p{
+            text-indent: 2em;
+            line-height: .55rem;
+        }
+    }
+}
+//100线
+.public{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    margin-bottom: .2rem;
+    header{
+        width: 100%;
+        height: .88rem;
+        border-bottom: .01rem solid #eeeeee;
+        font-family: PingFang-SC-Bold;
+        font-size: .32rem;
+        color: #333333;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            margin: 0 .24rem;
+            display: flex;
+            align-items: center;
+        }
+        span:nth-child(2){
+            font-family: PingFang-SC-Medium;
+            font-size: .24rem;
+            color: #999999;
+            font-weight: 400;
+        }
+    }
+    // 场上位置
+    .position{
+        width: 100%;
+        height: 100%;
+        .tit{
+            width: 100%;
+            height: 2.24rem;
+            border-bottom: solid #eeeeee .01rem;
+            .head{
+                width: 100%;
+                height: .84rem;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-family: PingFang-SC-Medium;
+                font-size: .24rem;
+                color: #67676d;
+                p{
+                    display: flex;
+                    align-items: center;
+                    .dian{
+                        width: .06rem;
+                        height: .06rem;
+                        background-color: #00aded;
+                        margin-right: .1rem;
+                        margin-left: .23rem;
+                    }
+                    .one{
+                        font-family: PingFang-SC-Bold;
+                        font-size: .24rem;
+                        letter-spacing: 2px;
+                        color: #00aded;
+                    }
+                    .two{
+                        font-family: PingFang-SC-Bold;
+                        font-size: .24rem;
+                        letter-spacing: 2px;
+                        color: #333333;
+                        font-weight: 900;
+                    }
+                }
+            }
+            .content{
+                width: 7rem;
+                height: 1.1rem;
+                background-color: #f7f7f7;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-bottom: .3rem;
+                text-indent: .22rem;
+                p:nth-child(1){
+                    font-family: PingFang-SC-Bold;
+                    font-size: .26rem;
+                    letter-spacing: 2px;
+                    color: #00aded;
+                    font-weight: 900;
+                }
+                p:nth-child(2){
+                    font-family: PingFang-SC-Medium;
+                    font-size: .24rem;
+                    color: #333333;
+                }
+            }
+        }
+        .contents{
+            width: 7rem;
+            height: 6.2rem;
+            display: flex;
+            flex-direction: column;
+            margin: .3rem auto;
+            .header{
+                width: 7rem;
+                height: .88rem;
+                background-color: #f0f0f0;
+                display: flex;
+                align-items: center;
+                div{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .you{
+                    p:nth-child(1){
+                        font-family: PingFang-SC-Bold;
+                        font-size: .28rem;
+                        line-height: .34rem;
+                        color: #00a303;
+                        font-weight: 900;
+                        img{
+                            margin: 0 .1rem;
+                        }
+                    }
+                    p:nth-child(2){
+                        font-family: PingFang-SC-Bold;
+                        font-size: .2rem;
+                        line-height: .34rem;
+                        color: #00a303;
+                        opacity: 0.7;
+                    }
+                }
+                .ruo{
+                    p:nth-child(1){
+                        font-family: PingFang-SC-Bold;
+                        font-size: .28rem;
+                        line-height: .34rem;
+                        color: #777680;
+                        font-weight: 900;                        
+                        img{
+                            margin: 0 .1rem;
+                        }
+                    }
+                    p:nth-child(2){
+                        font-family: PingFang-SC-Bold;
+                        font-size: .2rem;
+                        line-height: .34rem;
+                        color: #777680;
+                        opacity: 0.7;
+                    }
+                }
+            }
+            .body{
+                flex: 1;
+                background-color: #f7f7f7;
+                display: flex;
+                padding-top: .05rem;
+                div{
+                    flex: 1;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        font-family: PingFang-SC-Medium;
+                        font-size: .26rem;
+                        color: #202021;
+                        margin: .15rem 0;
+                        span:nth-child(1){
+                            width: .86rem;
+                            height: .34rem;
+                            border-radius: .02rem;
+                            font-family: PingFang-SC-Medium;
+                            font-size: .22rem;
+                            color: #ffffff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 .2rem 0 .4rem;
+                        }
+                    }
+                }
+                .you{
+                    border-right: .01rem solid #eeeeee;
+                }
+                .ruo{
+
+                }
+            }
+        }
+    }
+
+    //曼城相关新闻
+    .new{
+        width: 100%;
+        height: 100%;
+        padding: 0 .24rem;
+        .news{
+            width: 100%;
+            height: 1.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #eeeeee;            
+            .left{
+                width: 2.4rem;
+                height: 1.35rem;
+                background-color: #dfdfdf;
+                border-radius: .04rem;
+                margin-right: .2rem;
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 1.5rem;
+                p:nth-child(1){
+                    font-family: PingFang-SC-Bold;
+                    font-size: .3rem;
+                    color: #202021;
+                    font-weight: 600;
+                }
+                p:nth-child(2){
+                    font-family: PingFang-SC-Medium;
+                    font-size: .24rem;
+                    color: #999999;
+                    display: flex;
+                    span{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            margin-right: .1rem;
+                        }
+                    }
+                    span:nth-child(2){
+                        margin: 0 .4rem 0 .67rem;
+                    }
+                }
+            }
+        }
+    }
+}

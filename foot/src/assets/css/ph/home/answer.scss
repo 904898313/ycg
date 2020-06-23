@@ -1,0 +1,28 @@
+.answerBox{
+  background-color: #ffffff;
+  margin-top: 0.2rem;
+  .answerList{
+    padding: 0 0.24rem;
+    .answer_item{
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #eeeeee;
+      >p{
+        font-size: 0.28rem;
+        color: #333333;
+      }
+      .item_info{
+        display: flex;
+        align-items: center;
+        margin-top: 0.15rem;
+        font-size: 0.24rem;
+        color: #a0a0a0;
+        >span{
+          margin-left: 0.3rem;
+        }
+      }
+    }
+    .answer_item:last-child{
+      border-bottom: 0;
+    }
+  }
+}

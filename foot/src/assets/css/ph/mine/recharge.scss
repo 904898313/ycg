@@ -1,0 +1,206 @@
+.container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+    background: #f1f1f6;
+}
+
+nav {
+    display: flex;
+    width: 6.9rem;
+    padding: .39rem .3rem 0rem .3rem;
+    height: .8rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: .36rem;
+    color: #ffffff;
+    background: #fff;
+
+    img {
+        position: absolute;
+        width: .48rem;
+        height: .48rem;
+        left: .3rem;
+    }
+
+    span {
+        text-align: center;
+        font-weight: bold;
+        font-size: .36rem;
+        color: #222222;
+    }
+}
+
+.recharge {
+    margin-top: .2rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+
+    .title {
+        color: #222222;
+        font-size: .32rem;
+        font-weight: bold;
+        line-height: 1rem;
+        padding-left: .3rem;
+    }
+
+    .rechargeList {
+        width: 7.1rem;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+        .item {
+            width: 2.17rem;
+            height: 1.3rem;
+            background-color: #ffffff;
+            border-radius: .04rem;
+            border: solid 1px #e1e1e1;
+            margin-bottom: .3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0rem .09rem .3rem .09rem;
+
+            span {
+                font-size: .32rem;
+                color: #222222;
+            }
+
+            p {
+                font-size: .24rem;
+                color: #222222;
+            }
+        }
+
+        .active {
+            @extend .item;
+            border: solid 1px $ffc002;
+
+            span {
+                font-size: .32rem;
+                color: $ffc002;
+            }
+
+            p {
+                font-size: .24rem;
+                color: $ffc002;
+            }
+        }
+    }
+}
+
+.pay {
+    margin-top: .2rem;
+    background: #fff;
+
+    .title {
+        color: #222222;
+        font-size: .32rem;
+        font-weight: bold;
+        line-height: 1rem;
+        padding-left: .3rem;
+    }
+
+    .paytype {
+        width: 6.9rem;
+        margin: 0 auto;
+        height: .80rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: .44rem;
+            height: .44rem;
+            margin-right: .2rem;
+        }
+    }
+}
+
+
+.quanyi {
+    margin-top: .2rem;
+    width: 100%;
+    background-color: #fff;
+
+    .titles {
+        width: 100%;
+        height: 1.12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: .24rem;
+            color: #ca963b;
+            font-size: .38rem;
+            margin: 0rem .2rem;
+            letter-spacing: .1rem;
+        }
+    }
+
+    .quanyilist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 6.9rem;
+        margin: 0 auto;
+
+        .item {
+            width: 3.3rem;
+            height: 1.6rem;
+            background-color: #fffaf1;
+            border-radius: .12rem;
+            border: solid .02rem #f7ead3;
+            margin-bottom: .2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-size: .28rem;
+                color: #222222;
+            }
+
+            span {
+                font-size: .22rem;
+                color: #999999;
+            }
+        }
+    }
+
+}
+
+.addheight {
+    width: 100%;
+    height: 1rem;
+}
+
+.payment {
+    position: fixed;
+    bottom: 0rem;
+    left: 0rem;
+    background: #fff;
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+
+    span {
+        align-self: center;
+        width: 6.9rem;
+        height: .8rem;
+        background: $ffc002;
+        color: #fff;
+        line-height: .8rem;
+        text-align: center;
+    }
+}

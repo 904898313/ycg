@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+    background-color: #F2F5F9;
+}
+
+.inner-container{
+    width:1200px;
+    margin:54px auto ;
+    display: flex;
+    justify-content: space-between;
+    .left{
+        width:850px;
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        width:330px;
+    }
+}

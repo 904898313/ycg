@@ -1,0 +1,477 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+    // 头部导航
+    header{
+        width: 100%;
+        height: 1.13rem;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .navlist{
+            width: 2.2rem;
+            height: .65rem;
+            border-radius: .33rem;
+            background-color: #eaeaea;
+            font-family: PingFang-SC-Medium;
+            font-size: .28rem;
+            color: #999999;
+            margin: 0 .1rem;
+            span{
+                display: block;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    margin-left: .1rem;
+                }
+            }
+            ul{
+                display: none;
+                width: 100%;
+                li{
+                    width: 100%;
+                    height: .65rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    // 数据表格
+    .list{
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        padding-bottom: .3rem;
+        .head{
+            width: 100%;
+            height: .58rem;
+            background-color: #f7f7fb;
+            font-family: PingFang-SC-Medium;
+            font-size: .24rem;
+            color: #999999;
+        }
+        .body{
+            width: 100%;
+            height: .58rem;
+            font-family: PingFang-SC-Medium;
+            font-size: .24rem;
+            color: #999999;
+            border-bottom: .01rem solid #eeeeee;
+            p{
+                border-right: .01rem solid #eeeeee;
+            }
+            p:nth-child(6){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span{
+                    width: .28rem;
+                    height: .28rem;
+                    background-color: #f65e53;
+                    border-radius: .02rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: PingFang-SC-Medium;
+                    font-size: .2rem;
+                    color: #ffffff;  
+                    margin: 0 .05rem;
+                }
+            }
+            p:nth-child(7){
+                span{
+                    width: .64rem;
+                    height: .28rem;
+                    background-color: #91bc80;
+                    border-radius: .02rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    font-family: PingFang-SC-Bold;
+                    font-size: .22rem;
+                    color: #ffffff;
+                }
+            }
+        }
+        .total{
+            font-family: PingFang-SC-Medium;
+            font-size: .24rem;
+            color: #202021;
+        }
+        //公共
+        .public{
+            display: flex;
+            p{
+                width: .7rem;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p:nth-child(1){
+                width: .9rem;
+            }
+            p:nth-child(6){
+                width: 2.4rem;
+            }
+            p:nth-child(7){
+                flex: 1;
+            }
+        }
+        //主场buff
+        .homebuff{
+            width: 100%;
+            height: .7rem;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            font-family: PingFang-SC-Medium;
+            font-size: .22rem;
+            color: #999999;
+            text-indent: .22rem;
+            border-bottom: .01rem solid #eeeeee;
+            span{
+                font-family: PingFang-SC-Bold;
+                font-size: .22rem;
+                color: #f55e53;
+                padding-left: .22rem;
+            }
+        }
+    }
+    //球队角球统计
+    .corner{
+        width: 100%;
+        height: 100%;
+        .tit{
+            width: 100%;
+            height: .58rem;
+            background-color: #f7f7fb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: PingFang-SC-Bold;
+            font-size: .24rem;
+            color: #202021;
+            font-weight: 900;
+            img{
+                margin: 0 .1rem;
+            }
+        }
+        .content{
+            width: 100%;
+            height: 1.74rem;
+            background-color: #ffffff;
+            border-bottom: .01rem solid #eeeeee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: PingFang-SC-Medium;
+            font-size: .24rem;
+            color: #999999;
+            .center{
+                margin: 0 .4rem;
+                p:nth-child(1){
+                    font-family: PingFang-SC-Bold;
+                    font-size: .3rem;
+                    color: #333333;
+                    font-weight: 900;
+                }
+            }
+            .datas{
+                display: flex;
+                flex-direction: column;
+                
+                align-items: flex-start;
+                p{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    span:nth-child(3){
+                        font-family: PingFang-SC-Medium;
+                        font-size: .24rem;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+        .whole{
+            width: 100%;
+            height: .58rem;
+            background-color: #ffffff;
+            font-family: PingFang-SC-Medium;
+            font-size: .22rem;
+            color: #999999;
+            display: flex;
+            align-items: center;
+            text-indent: .23rem;
+        }
+    }
+    //进失热度图
+    .hotchart{
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-bottom: .01rem solid #eeeeee;
+        .tit{
+            width: 100%;
+            height: .8rem;
+            display: flex;
+            align-items: center;
+            span:nth-child(1){
+                font-family: PingFang-SC-Bold;
+                font-size: .32rem;
+                color: #202021;
+                font-weight: 900;
+                text-indent: .23rem;
+            }
+            img{
+                margin: 0 .1rem;
+            }
+            span:nth-child(3){
+                font-family: PingFang-SC-Medium;
+                font-size: .24rem;
+                color: #999999;
+            }
+        }
+        .nav{
+            width: 100%;
+            height: 1.16rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                width: 1.68rem;
+                height: .56rem;
+                background-color: #eaeaea;
+                border-radius: 4px;
+                opacity: 0.68;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: PingFang-SC-Medium;
+                font-size: .28rem;
+                color: #999999;
+                margin: 0 .1rem;
+            }
+            .select{
+                border-radius: 4px;
+                border: solid 1px #ffc002;
+                background-color: #ffffff;
+            }
+        }
+        .top{
+            width: 100%;
+            height: 100%;
+            p{
+                width: 100%;
+                height: .4rem;
+                padding: 0 .5rem;
+                display: flex;
+                align-items: center;
+                font-family: PingFang-SC-Medium;
+                font-size: .24rem;
+                color: #999999;
+                span:nth-child(2){
+                    font-family: MontserratAlternates-Medium;
+                    font-size: .3rem;
+                    color: #202021;
+                    font-weight: 900;
+                }
+            }
+            .content{
+                width: 100%;
+                height: 1.1rem;
+                background-color: #ffffff;
+                padding: 0 .5rem;
+                p{
+                    width: 100%;
+                    height: .4rem;
+                    display: flex;
+                    background-color: red;
+                    padding: 0;
+                    margin-top: .16rem;
+                    span{
+                        display: block;
+                        flex: 1;
+                        height: 100%;
+                        background-color: skyblue;
+                    }
+                    .HT{
+                        background-color: #2a2d33;
+                        font-family: PingFang-SC-Medium;
+                        font-size: .2rem;
+                        color: #ffffff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        .num{
+            width: 100%;
+            height: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 0.01rem solid #eeeeee;
+            span:nth-child(1){
+                font-family: PingFang-SC-Medium;
+                font-size: .24rem;
+                color: #999999;
+            }
+            span:nth-child(2){
+                font-family: MontserratAlternates-Medium;
+                font-size: .3rem;
+                color: #202021;
+                font-weight: 900;
+            }
+        }
+        .colorbox{
+            width: 100%;
+            height: 1rem;
+            p:nth-child(1){
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: PingFang-SC-Medium;
+                font-size: .24rem;
+                color: #999999;
+                margin-top: .24rem;
+                .box{
+                    margin: 0 .1rem 0 .3rem;
+                }
+                .box1{
+                    width: .18rem;
+                    height: .18rem;
+                    background-color: #81b292;
+                }
+                .box2{
+                    width: .18rem;
+                    height: .18rem;
+                    background-color: #197238;
+                }
+                .box3{
+                    width: .18rem;
+                    height: .18rem;
+                    background-color: #b32c22;
+                }
+                .box4{
+                    width: .18rem;
+                    height: .18rem;
+                    background-color: #8a0a00;
+                }
+
+
+                
+            }
+            p:nth-child(2){
+                font-family: PingFang-SC-Medium;
+                font-size: .24rem;
+                color: #999999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    //联赛数据
+    .datasbox{
+        width: 100%;
+        height: 100%;
+        .tit{
+            width: 100%;
+            height: .9rem;
+            font-family: PingFang-SC-Bold;
+            font-size: .32rem;
+            color: #202021;
+            display: flex;
+            align-items: center;
+            text-indent: .24rem;
+            font-weight: 900;
+        }
+        .datas_nav{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: .3rem;
+            div{
+                width: 1.57rem;
+                height: .56rem;
+                border-radius: .28rem;
+                margin: 0 .1rem;
+                background-color: #f1f1f1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: PingFang-SC-Medium;
+                font-size: .28rem;
+                color: #999999;
+            }
+            .select{
+                background-color: #ffc002;
+                border-radius: .28rem;
+                color: #ffffff;
+            }
+        }
+        .head{
+            width: 100%;
+            height: .58rem;
+            background-color: #f7f7fb;
+            font-family: PingFang-SC-Medium;
+            font-size: .24rem;
+            color: #999999;
+        }
+        .body{
+            width: 100%;
+            height: .8rem;
+            background-color: #ffffff;
+            font-family: PingFang-SC-Medium;
+            font-size: .22rem;
+            color: #333333;
+            border-bottom: .01rem solid #eeeeee;
+            p{
+                border-right: .01rem solid #eeeeee;
+            }
+        }
+        .public{
+            display: flex;
+            p{
+                width: .66rem;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p:nth-child(1){
+                flex: 1;
+            }
+        }
+        .echartsbox{
+            width: 100%;
+            height: 2.58rem;
+            background-color: #ffffff;
+            margin: 0;
+        }
+    }
+
+
+
+
+    .bg{
+        width: 100%;
+        height: .2rem;
+        background-color: #edeef3;
+    }

@@ -1,0 +1,177 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+// 基本信息
+.head{
+    width: 100%;
+    height: 100%;
+    padding: 0 .24rem;
+    .heads{
+        width: 100%;
+        height: .9rem;
+        border-bottom: .01rem solid #eeeeee;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .26rem;
+        color: #939393;
+        .weight{
+            color: #1a1a1a;
+            font-size: .3rem;
+            font-weight: 900;
+        }
+        .two{
+            font-size: .26rem;
+            color: #1f1f1f;
+        }
+    }
+}
+//球队阵容
+.lineup{
+    width: 100%;
+    height: 100%;
+    header{
+        width: 100%;
+        height: .9rem;
+        color: #1a1a1a;
+        font-size: .3rem;
+        text-indent: .24rem;
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+    }
+    //主教练
+    .coach{
+        width: 100%;
+        height: 100%;
+        .tit{
+            width: 100%;
+            height: .7rem;
+            font-size: .26rem;
+            color: #131217;
+            text-indent: .24rem;
+            background-color: #f7f6fb;
+            display: flex;
+            align-items: center;
+        }
+        .content{
+            width: 100%;
+            height: 1.2rem;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #999999;
+            font-size: .22rem;
+            padding: 0 .25rem;
+            line-height: .4rem;
+            .left{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: .15rem;
+                }
+                .text{
+                    .name{
+                        color: #1f1f1f;
+                        font-size: .28rem;
+                    }
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+    }
+    // 球员
+    // 前锋
+    .player{
+        width: 100%;
+        height: 100%;
+        .tit{
+            width: 100%;
+            height: .7rem;
+            font-size: .22rem;
+            color: #9e9ea0;
+            background-color: #f7f6fb;
+            div:nth-child(1){
+                color: #252429;
+                font-size: .26rem;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .content{
+            height: 1.2rem;
+            width: 100%;
+            border-bottom: .01rem solid #eeeeee;
+            font-size: .22rem;
+            color: #212121;
+            .left{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: .15rem;
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    color: #999999;
+                    font-size: .22rem;
+                    align-items: flex-start;
+                    justify-content: center;
+                    .name{
+                        color: #1f1f1f;
+                        font-size: .28rem;
+                    }
+                }
+            }
+
+        }
+        .public{
+            padding: 0 .24rem;
+            display: flex;
+            p,div{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            div:nth-child(1){
+                width: 3rem;
+                justify-content: flex-start;
+            }
+            p:nth-child(2){
+                width: 1.1rem;
+                flex-direction: column;
+            }
+            p:nth-child(3){
+                width: 1.26rem;
+            }
+            p:nth-child(4){
+                flex: 1;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.bg{
+    width: 100%;
+    height: .2rem;
+    background-color: #edeef3;
+}

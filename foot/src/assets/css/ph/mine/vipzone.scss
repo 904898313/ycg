@@ -1,0 +1,327 @@
+.container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    height: 4.53rem;
+    position: relative;
+
+    .navheader {
+        width: 100%;
+        height: 2.85rem;
+        background-color: #191a1e;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: .48rem;
+            height: .48rem;
+            position: absolute;
+            left: .3rem;
+            top: .6rem;
+        }
+
+        span {
+            color: #ffffff;
+            font-size: .36rem;
+            font-weight: bold;
+            margin-top: .6rem;
+        }
+    }
+
+    .card {
+        width: 6.81rem;
+        position: absolute;
+        left: .35rem;
+        bottom: .5rem;
+        height: 2.4rem;
+        background: url("../../../../assets/images/mine/mine_card_i@2x.png");
+        background-size: 6.81rem 2.4rem;
+        box-shadow: 0px 14px 81px 0px rgba(51, 68, 102, 0.33);
+        border-radius: .12rem;
+
+        .user {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            >img {
+                width: 1.06rem;
+                height: 1.06rem;
+                margin: 0rem .3rem;
+                border-radius: 50%;
+            }
+
+            .user-mid {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .name {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        font-size: .34rem;
+                        color: #ffffff;
+                        font-weight: bold;
+                        padding-right: .1rem;
+                    }
+
+                    img {
+                        width: .36rem;
+                        height: .36rem;
+                    }
+                }
+
+                .progress {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+
+                    .leav {
+                        display: inline-block;
+                        color: #fff;
+                        margin-right: .15rem;
+                    }
+
+                    .progresss {
+                        width: 2.5rem;
+                    }
+                }
+            }
+
+        }
+
+        .txt {
+            display: flex;
+            justify-content: flex-end;
+
+            span {
+                font-size: .26rem;
+                color: #ffffff;
+                line-height: .8rem;
+                padding-right: .35rem;
+            }
+        }
+    }
+
+}
+
+.chongzhi {
+    width: 100%;
+
+    .title {
+        margin-top: .3rem;
+        width: 100%;
+
+        span {
+            padding-left: .3rem;
+            font-size: .34rem;
+            color: #222222;
+            font-weight: bold;
+        }
+    }
+
+    .vipList {
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        // -webkit-overflow-scrolling: touch;
+        padding: .3rem .3rem 0rem .3rem;
+
+        :nth-child(1) {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -.2rem;
+                right: 0rem;
+                z-index: 1;
+            }
+        }
+
+        .list {
+            width: 2.1rem;
+            height: 100%;
+            background-color: #ffffff;
+            border-radius: .12rem;
+            border: solid 2px #e4e4e4;
+            margin-right: .2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .active {
+            @extend .list;
+            border: 2px solid #ffc002;
+            background-color: #fffaf1;
+        }
+
+        .tian {
+            font-size: .28rem;
+            color: #404040;
+            margin-top: .47rem;
+        }
+
+        .money {
+            font-size: .48rem;
+            color: #ca963b;
+
+        }
+
+        .limoney {
+            font-size: .24rem;
+            color: #999999;
+        }
+
+        .btn {
+            width: 1.5rem;
+            height: .36rem;
+            background-color: #ffc002;
+            border-radius: .18rem;
+            font-size: .2rem;
+            color: #ffffff;
+            line-height: .36rem;
+            text-align: center;
+            margin: .15rem .0rem;
+        }
+
+
+    }
+}
+
+.payType {
+    width: 100%;
+
+    .title {
+        margin: .3rem 0rem .1rem 0rem;
+    }
+
+    .radios {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem .3rem;
+        height: .86rem;
+
+        img {
+            width: .44rem;
+            height: .44rem;
+            margin-right: .1rem;
+        }
+
+        >:nth-child(1) {
+            border-bottom: 1px solid #f4f4f4;
+        }
+    }
+
+    .btnsdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .btns {
+            margin: 0 auto;
+            width: 6.9rem;
+            height: .88rem;
+            background-color: #e5c893;
+            border-radius: .44rem;
+            color: #ffffff;
+            font-size: .34rem;
+            margin-top: .15rem;
+        }
+    }
+
+}
+
+.quanyi {
+    margin-top: .2rem;
+    width: 100%;
+    background-color: #fff;
+
+    .titles {
+        width: 100%;
+        height: .75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: .24rem;
+            color: #ca963b;
+            font-size: .38rem;
+            font-weight: bold;
+            margin: 0rem .2rem;
+        }
+    }
+
+    .quanyilist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .top {
+            width: 6.9rem;
+            height: 1.57rem;
+            background: url(../.././../images/mine/vip_bg1@2x.png);
+            background-size: 6.9rem 1.57rem;
+            margin-top: .21rem;
+
+            p {
+                font-size: .32rem;
+                color: #0e0e0e;
+                margin-top: .35rem;
+                margin-left: .3rem;
+            }
+
+            span {
+                font-size: .28rem;
+                color: #8a8a8a;
+                margin-top: .25rem;
+                margin-left: .3rem;
+            }
+        }
+
+        .bot {
+            width: 6.9rem;
+            height: 1.57rem;
+            background: url(../.././../images/mine/vip_bg2@2x.png);
+            background-size: 6.9rem 1.57rem;
+            margin-top: .21rem;
+
+            p {
+                font-size: .32rem;
+                color: #0e0e0e;
+                margin-top: .35rem;
+                margin-left: .3rem;
+            }
+
+            span {
+                font-size: .28rem;
+                color: #8a8a8a;
+                margin-top: .25rem;
+                margin-left: .3rem;
+            }
+        }
+    }
+
+}
+
+/* 隐藏下方的滚动条 */
+.vipList::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.vipList {
+    overflow: -moz-scrollbars-none;
+}

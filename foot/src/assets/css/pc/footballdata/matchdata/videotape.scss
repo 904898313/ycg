@@ -1,0 +1,139 @@
+.content-smallbox{
+    width: 1200px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: space-between;
+    // 左
+    .left{
+        width: 840px;
+        height: 100%;
+        // 公用
+        .result{
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            header{
+                width: 100%;
+                height: 58px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #f5f5f5;
+                p{
+                    width: 100%;
+                    height: 22px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 20px;
+                    border-left: 6px solid $ffc002;
+                    span:nth-child(1){
+                        font-size: 20px;
+                        color: #202021;
+                        font-weight: 900;
+                    }
+                    span:nth-child(2){
+                        font-size: 14px;
+                        color: #999999;
+                    }
+                }
+            }
+            .body{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 10px;
+                .body-video{
+                    margin: 10px;
+                    width: 185px;
+                    height: 185px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #444444;
+                    img{
+                        display: block;
+                        width: 185px;
+                        height: 138px;
+                        background-color: #f5f5f5;
+                    }
+                    p{
+                        margin-top: 11px;
+                    }
+                }
+            }
+            .paging{
+                width: 100%;
+                background-color: #f1f4f9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 40px;
+            }
+        }
+    }
+    //右
+    .right{
+        width: 330px;
+        height: 100%;
+        background-color: #f1f4f9;
+        // 数据统计 复用
+        .repeat{
+            width: 100%;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            header{
+                width: 100%;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                font-weight: 900;
+                font-size: 20px;
+                color: #202021;
+                border-bottom: 1px solid #eeeeee;
+                span{
+                    padding-left: 20px;
+                }
+                img{
+                    margin-left: 5px;
+                }
+            }
+            .repeat-list{
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+                font-size: 16px;
+                color: #202021;
+                p{
+                    height: 35px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 16px;
+                        height: 16px;
+                        background-color: skyblue;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            // 英超各赛季数据回顾
+            .repeat-box{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                padding: 15px 10px;
+                flex-wrap: wrap;
+                div{
+                        height: 36px;
+                        background-color: #f3f3f8;
+                        font-size: 14px;
+                        line-height: 36px;
+                        color: #202021;
+                        text-align: center;
+                        margin: 5px 5.5px;
+                        cursor: pointer;
+                        padding: 0 12px;
+                }
+            }
+        }
+    }
+}

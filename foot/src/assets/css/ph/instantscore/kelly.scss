@@ -1,0 +1,341 @@
+.container {
+    width: 100%;
+    background-color: #edeef3;
+}
+
+header {
+    height: .88rem;
+    background-color: #30303d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem .24rem;
+
+    .mid {
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            color: #ffffff;
+            font-size: .34rem;
+        }
+    }
+
+    .left {
+        @extend .mid;
+        justify-content: flex-start;
+
+        .back {
+            width: .48rem;
+            height: .48rem;
+        }
+    }
+
+    .indemnity-menu {
+        @extend .mid;
+        justify-content: flex-end;
+    }
+}
+
+.finish {
+    width: 100%;
+    height: 3.22rem;
+    background-color: #edeef3;
+    position: relative;
+
+    .score {
+        height: 2.25rem;
+        background-color: #30303d;
+        display: flex;
+        justify-content: space-around;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: .2rem;
+
+            img {
+                width: .68rem;
+                height: .68rem;
+            }
+
+            span {
+                color: #ffffff;
+                font-size: .26rem;
+                margin-top: .13rem;
+                line-height: .26rem;
+            }
+        }
+
+        .mid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .txt1 {
+                margin-top: .3rem;
+                color: #ffffff;
+                font-size: .24rem;
+                color: #ffffff;
+                opacity: 0.4;
+            }
+
+            .txt2 {
+                color: #eeeeee;
+
+                span {
+                    color: #ffffff;
+                    font-size: .36rem;
+                    font-weight: bold;
+                }
+
+            }
+        }
+
+        .right {
+            @extend .left;
+        }
+    }
+
+    .masking {
+        width: 7rem;
+        height: 1.77rem;
+        left: .25rem;
+        bottom: 0rem;
+        background-color: #ffffff;
+        position: absolute;
+        box-shadow: 0px .06rem .1rem 0px rgba(32, 32, 33, 0.05);
+        border-radius: .04rem;
+
+        .top {
+            display: flex;
+            justify-content: space-around;
+            margin-top: .3rem;
+
+            span {
+                color: #999999;
+                font-size: .24rem;
+            }
+        }
+
+        .mid {
+            display: flex;
+            justify-content: space-around;
+
+            .aa {
+                span {
+                    color: #202021;
+                    font-size: .24rem;
+                    margin: 0 .28rem;
+
+                }
+            }
+        }
+
+        .bot {
+            display: flex;
+            justify-content: space-around;
+            margin-top: .1rem;
+
+            .aa {
+                p {
+                    color: #202021;
+                    font-size: .24rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.sample {
+    .title {
+        height: .9rem;
+        background-color: #edeef3;
+        color: #202021;
+        font-size: .32rem;
+        font-weight: bold;
+        text-indent: .3rem;
+        line-height: 1.1rem;
+    }
+
+    .chart {
+        .numerical {
+            background-color: #ffffff;
+
+            .top {
+                display: flex;
+                justify-content: space-around;
+                padding-top: .3rem;
+
+                span {
+                    color: #999999;
+                    font-size: .26rem;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: .26rem;
+                        height: .26rem;
+                        margin-left: .1rem;
+                    }
+                }
+            }
+
+            .bar {
+                display: flex;
+                justify-content: space-around;
+                margin-top: .3rem;
+                padding-bottom: .3rem;
+
+                .left {
+                    display: flex;
+
+                    .item {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 .12rem;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        i {
+                            border-radius: .02rem .02rem .02rem .02rem;
+                            margin-top: .05rem;
+                            margin-bottom: .08rem;
+                        }
+
+                        .num {
+                            font-size: .24rem;
+                            font-weight: bold;
+
+                            &:after {
+                                content: '家';
+                                color: #999999;
+                                font-size: .18rem;
+                            }
+                        }
+
+                        .record {
+                            color: #bbbbbb;
+                            font-size: .22rem;
+                        }
+                    }
+                }
+
+                .right {
+                    @extend .left;
+                }
+            }
+        }
+
+        .ou-tables {
+            background-color: #ffffff;
+
+            .title {
+                height: .56rem;
+                background-color: #edeef3;
+                display: flex;
+                align-items: center;
+
+                .menu1 {
+                    flex-grow: 1;
+                }
+
+                .menu2 {
+                    display: flex;
+                    justify-content: center;
+                    flex-grow: 1;
+                }
+
+                .rate {
+                    text-align: center;
+                    flex-grow: 1;
+                    font-size: .24rem;
+                    color: #999999;
+                }
+            }
+
+            .list {
+                .info {
+                    display: flex;
+                    height: 1.2rem;
+
+                    .left {
+                        width: 2.17rem;
+                        display: flex;
+                        margin-left: .24rem;
+
+                        .name {
+                            width: 1.69rem;
+                            color: #202021;
+                            font-weight: bold;
+                            font-size: .24rem;
+                            display: flex;
+                            align-items: center;
+
+                            i {
+                                display: inline-block;
+                                width: .28rem;
+                                height: .28rem;
+                                background-color: #ffc002;
+                                border-radius: .13rem;
+                                color: #ffffff;
+                                font-size: .16rem;
+                                line-height: .28rem;
+                                text-align: center;
+                                margin-left: .3rem;
+                                margin-right: .2rem;
+                            }
+                        }
+
+                        .cut {
+                            display: flex;
+                            flex-direction: column;
+
+                            >:nth-child(1) {
+                                color: #2fcc86;
+                            }
+
+                            >:nth-child(2) {
+                                color: #f55e53;
+                            }
+
+                            span {
+                                height: 50%;
+                                width: .6rem;
+                                height: .6rem;
+                                color: #999999;
+                                line-height: .6rem;
+                                text-align: center;
+                                font-size: .24rem;
+                                border: .01rem solid #f4f4f4;
+                            }
+                        }
+                    }
+
+                    .right {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 5.25rem;
+
+                        span {
+                            width: 1.2rem;
+                            height: .6rem;
+                            border: .01rem solid #f4f4f4;
+                            margin-left: -.01rem;
+                            margin-top: -.01rem;
+                            text-align: center;
+                            line-height: .6rem;
+                            font-size: .24rem;
+                            color: #999999;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

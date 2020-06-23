@@ -1,0 +1,618 @@
+.circle {
+    display: flex;
+    background-color: #ffffff;
+
+    .circleInfo {
+        flex: 1;
+        height: 1.68rem;
+        border: solid .01rem #eeeeee;
+        border-right: 0;
+        margin-top: .4rem;
+
+        .circlenum {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .leftnum {
+                color: #214187;
+                font-size: .26rem;
+                font-weight: bold;
+                margin-right: .08rem;
+            }
+
+            .rightnum {
+                font-size: .26rem;
+                color: #7ec3f6;
+                margin-left: .08rem;
+            }
+        }
+
+        p {
+            color: #333333;
+            text-align: center;
+            font-size: .22rem;
+            line-height: .22rem;
+            margin: .20rem 0rem;
+        }
+    }
+}
+
+.progress {
+    background-color: #ffffff;
+
+    p {
+        text-align: center;
+        line-height: .7rem;
+        color: #333333;
+        font-size: .22rem;
+    }
+
+    .mid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icons {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: .28rem;
+                height: .28rem;
+                margin: 0 .15rem;
+            }
+        }
+
+        .score {
+            display: flex;
+            align-items: center;
+
+            span {
+                color: #333333;
+                font-size: .24rem;
+            }
+
+            .vanprogress {
+                width: 3.1rem;
+                height: .09rem;
+                border-radius: .05rem;
+                margin: 0 .2rem;
+            }
+        }
+    }
+
+}
+
+.legend {
+    margin-top: .2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        display: flex;
+        margin-top: .24rem;
+
+        .left {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+
+            span {
+                color: #999999;
+                font-size: .22rem;
+                margin: 0 .4rem;
+            }
+        }
+
+        .right {
+            @extend .left;
+            justify-content: flex-end;
+        }
+    }
+
+    .mid {
+        display: flex;
+        align-items: center;
+
+        .vanprogress1 {
+            width: 6.5rem;
+            height: .14rem;
+            margin-left: .2rem;
+            position: relative;
+
+            img {
+                position: absolute;
+                left: .55rem;
+                top: .1rem;
+                height: .18rem;
+                width: .18rem;
+            }
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: .33rem;
+                height: .33rem;
+                margin: .15rem 0rem;
+                margin-left: .24rem;
+            }
+        }
+    }
+
+    .line {
+        width: 6.9rem;
+        height: .01rem;
+        background-color: #eeeeee;
+        margin: .3rem auto;
+    }
+
+    .rule {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            width: 6.9rem;
+            margin: 0 auto;
+
+            :nth-child(5) {
+                justify-content: center;
+            }
+
+            :nth-child(10) {
+                justify-content: center;
+            }
+
+            li {
+                width: 20%;
+                display: flex;
+                align-items: center;
+                margin: .1rem 0rem;
+
+                img {
+                    width: .26rem;
+                    height: .26rem;
+                    margin-right: .1rem;
+                }
+
+                span {
+                    color: #202021;
+                    font-size: .24rem;
+                }
+            }
+        }
+    }
+}
+
+.comment {
+    margin-top: .2rem;
+    background-color: #ffffff;
+
+    .tabs {
+        height: .8rem;
+        display: flex;
+        align-items: center;
+        border-bottom: .01rem solid #eeeeee;
+
+        span {
+            color: #999999;
+            font-size: .30rem;
+            margin: 0rem .3rem;
+            font-weight: bold;
+            line-height: .8rem;
+        }
+
+        .active {
+            color: #202021;
+            border-bottom: .03rem solid #ffc002;
+        }
+    }
+
+    .comment-region {
+        margin: 0.3rem .24rem;
+
+        p {
+            color: #999999;
+            font-size: .2rem;
+            margin-top: .2rem;
+        }
+
+        .submit {
+            display: flex;
+            width: 1.8rem;
+            height: .56rem;
+            background-color: #2fcc86;
+            color: #ffffff;
+            font-size: .24rem;
+            color: #ffffff;
+            justify-content: center;
+            line-height: .56rem;
+            margin-top: .2rem;
+        }
+    }
+
+    .record {
+        margin-top: .5rem;
+
+        .title {
+            display: flex;
+            align-items: center;
+
+            .newcoment {
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                color: #202021;
+                font-size: .28rem;
+
+                &::before {
+                    content: '';
+                    width: .06rem;
+                    height: .24rem;
+                    background-color: #f3c747;
+                    margin-right: .13rem;
+                    margin-left: .24rem;
+                }
+            }
+
+            .count {
+                font-size: .22rem;
+                color: #999999;
+                margin-left: .2rem;
+
+                font {
+                    font-size: .22rem;
+                    color: #2fcc86;
+                }
+            }
+        }
+
+        .line {
+            background-color: #eeeeee;
+            height: .02rem;
+            width: 7.26rem;
+            margin: .3rem auto;
+        }
+
+        .list {
+            .info {
+                display: flex;
+                padding-bottom: .2rem;
+
+                .left {
+                    display: flex;
+                    width: .8rem;
+                    margin-left: .24rem;
+                    margin-right: .2rem;
+
+                    img {
+                        width: .8rem;
+                        height: .8rem;
+                        border-radius: 50%;
+                    }
+                }
+
+                .right {
+                    flex: 1;
+
+                    .name {
+                        color: #2fcc86;
+                        font-size: .28rem;
+                    }
+
+                    .content {
+                        color: #202021;
+                        font-size: .28rem;
+                        margin-top: .1rem;
+                        padding-right: .24rem;
+                    }
+
+                    .browse {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: .1rem;
+
+                        .time {
+                            color: #999999;
+                            font-size: .24rem;
+                        }
+
+                        .zancai {
+                            display: flex;
+                            align-items: center;
+
+                            .zan {
+                                display: flex;
+                                align-items: center;
+
+                                font {
+                                    color: #f55e53;
+                                    font-size: .22rem;
+                                    line-height: .26rem;
+                                    margin-left: .16rem;
+                                }
+
+                                img {
+                                    width: .26rem;
+                                    height: .26rem;
+                                }
+                            }
+
+                            .cai {
+                                @extend .zan;
+                                margin-left: .56rem;
+                                margin-right: .24rem;
+
+                                font {
+                                    color: #cbcbcb;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .more {
+                display: flex;
+                color: #999999;
+                font-size: .26rem;
+                height: .8rem;
+                align-items: center;
+                justify-content: center;
+                border-top: #eeeeee solid .01rem;
+
+                span {
+                    margin-right: .06rem;
+                }
+            }
+        }
+    }
+}
+
+.indexList {
+    margin-top: .2rem;
+    background-color: #ffffff;
+    padding-top: .1rem;
+    display: flex;
+    flex-direction: column;
+
+    .info {
+        margin-top: .2rem;
+
+        .top {
+            height: .58rem;
+            width: 7rem;
+            border-radius: .02rem .02rem 0px 0px;
+            background-color: #d36558;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0rem 0.2rem;
+
+            span {
+                color: #ffffff;
+                font-size: .24rem;
+                line-height: .58rem;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .rangqiu {
+            @extend .top;
+            background-color: #f3c747;
+        }
+
+        .daxiao {
+            @extend .top;
+            background-color: #6bcfdb;
+        }
+
+        .pankou {
+            @extend .top;
+            background-color: #7ae08b;
+        }
+
+        .table {
+            padding: 0rem .2rem;
+
+            .chu {
+                display: flex;
+
+                .name {
+                    width: 1.3rem;
+                }
+
+                span {
+                    flex: 1;
+                    text-align: center;
+                    line-height: .6rem;
+                    font-size: .24rem;
+                    color: #999999;
+                    border-left: .01rem solid #f4f4f4;
+                    border-bottom: .01rem solid #f4f4f4;
+                }
+            }
+
+            .zhong {
+                @extend .chu;
+
+                span {
+                    color: #202021;
+                }
+            }
+        }
+    }
+}
+
+.jiemi {
+    background-color: #ffffff;
+    margin-top: .2rem;
+
+    .title {
+        width: 100%;
+        height: .8rem;
+        font-size: .32rem;
+        color: #202021;
+        text-indent: .24rem;
+        font-weight: bold;
+        line-height: .8rem;
+    }
+
+    .jiemi-tabs {
+        width: 100%;
+        height: .8rem;
+        background-color: #f7f7fb;
+        display: flex;
+        align-items: center;
+        border-bottom: .01rem #eeeeee solid;
+
+        span {
+            margin: 0 .25rem;
+            color: #202021;
+            font-size: .28rem;
+            font-weight: bold;
+            line-height: .8rem;
+        }
+
+        .active {
+            border-bottom: .03rem solid #ffc002;
+        }
+    }
+
+    .content {
+        padding: 0.3rem .24rem;
+
+        p {
+            color: #202021;
+            font-size: .28rem;
+            text-indent: .56rem;
+            line-height: .55rem;
+        }
+    }
+}
+
+.relnews {
+    margin-top: .2rem;
+    background-color: #ffffff;
+
+    .title {
+        width: 100%;
+        height: .80rem;
+        color: #202021;
+        font-size: .32rem;
+        font-weight: bold;
+        line-height: .8rem;
+        text-indent: .24rem;
+        border-bottom: .01rem solid #eeeeee;
+    }
+
+    .info {
+        padding: .30rem .24rem;
+        display: flex;
+        border-bottom: .01rem #eeeeee solid;
+
+        .left {
+            width: 2.4rem;
+            height: 1.35rem;
+
+            img {
+                width: 2.4rem;
+                height: 1.35rem;
+                border-radius: .04rem;
+            }
+        }
+
+        .right {
+            flex: 1;
+            margin-left: .2rem;
+            height: 1.35rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p {
+                color: #202021;
+                font-size: .30rem;
+                line-height: .39rem;
+            }
+
+            span {
+                color: #999999;
+                font-size: .24rem;
+            }
+        }
+    }
+}
+
+.replay {
+    margin-top: .2rem;
+    background-color: #ffffff;
+
+    .title {
+        width: 100%;
+        height: .80rem;
+        color: #202021;
+        font-size: .32rem;
+        font-weight: bold;
+        line-height: .8rem;
+        text-indent: .24rem;
+        border-bottom: .01rem solid #eeeeee;
+    }
+
+    .info {
+        padding: .24rem 0rem;
+        border-bottom: .01rem solid #eeeeee;
+        .top {
+            p {
+                color: #202021;
+                font-size: .24rem;
+                margin-left: .23rem;
+
+            }
+        }
+
+        .mid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: .25rem;
+            margin-bottom: .25rem;
+
+            p {
+                display: flex;
+                align-items: center;
+                color: #434e60;
+                font-size: .30rem;
+
+                img {
+                    width: .34rem;
+                    height: .34rem;
+                    margin: 0rem .1rem;
+                }
+            }
+        }
+
+        .bot {
+            display: flex;
+            justify-content: flex-end;
+
+            :nth-child(1) {
+                color: #4280c9;
+                font-size: .24rem;
+                margin-right: .3rem;
+            }
+
+            :nth-child(2) {
+                color: #999999;
+                font-size: .24rem;
+                margin-right: .25rem;
+            }
+        }
+    }
+}

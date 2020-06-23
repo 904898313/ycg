@@ -1,0 +1,30 @@
+{
+  "id": "1733981",
+  "name": "足球",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4926163",
+      "name": "搜索--1",
+      "font_class": "xingtaiduICON_sousuo--",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "5937765",
+      "name": "默认头像",
+      "font_class": "morentouxiang",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "6826594",
+      "name": "菜单",
+      "font_class": "menu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

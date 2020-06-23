@@ -1,0 +1,143 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+//转会信息列表
+.transfer{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #dedede;
+    // 头部分类区
+    .head{
+        width: 100%;
+        height: 33px;
+        background-color: #00aded;
+        border: solid 1px #dddddd;
+        display: flex;
+        align-items: center;
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 12px;
+        color: #ffffff;
+    }
+    // 循环内容区
+    .contents{
+        width: 100%;
+        height: 26px;
+        display: flex;
+        align-items: center;
+    }
+    .contents:nth-child(odd){
+        background-color: #f2f2f2;
+    }
+    .contents:nth-child(even){
+        background-color: #ffffff;
+    }
+    //公用样式
+    .list{
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 100%;
+            img{
+                margin-right: 6px;
+            }
+        }
+        span:nth-child(1){
+            width: 50px;
+        }
+        span:nth-child(3){
+            justify-content: flex-start;
+        }
+        span:nth-child(4){
+            justify-content: flex-start;
+        }
+        span:nth-child(5){
+            flex: 1;
+        }
+        span:nth-child(6){
+            flex: 1;
+        }
+        span:nth-child(7){
+            flex: 1;
+        }
+    }
+}
+//可视化转会信息
+.big{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .echarts{
+        width: 100%;
+        height: 212px;
+        background-color: #404040;
+        border-radius: 4px;
+        border: solid 1px #dddddd;
+        margin-bottom: 20px;
+    }
+    .title{
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left{
+            font-family: MicrosoftYaHei;
+            font-size: 20px;
+            color: #ffffff;
+            margin-left: 30px;
+        }
+        .right{
+            margin-right: 30px;
+            p:nth-child(1){
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #eedca1;
+            }
+            p:nth-child(2){
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #fccb39;
+            }
+        }
+    }
+}
+//荣誉记录
+.record{
+    width: 100%;
+    height: 100%;
+    header{
+        height: 36px;
+        font-size: 18px;
+        color: #333333;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+    }
+    p{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ececec;
+        img{
+            margin-right: 12px;
+        }
+        span:nth-child(2){
+            color: #11b33b;
+            font-size: 12px;
+        }
+        span:nth-child(3){
+            color: #010000;
+            font-size: 10px;
+            margin-left: 18px;
+        }
+    }
+}

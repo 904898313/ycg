@@ -1,0 +1,31 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+    //面包屑
+    .crumbs{
+        width: 1200px;
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        line-height: 60px;
+        color: #96969f;
+        span:nth-last-child(1){
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            line-height: 60px;
+            color: #000047;
+        }
+        span{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 5px;
+            }
+        }
+    }

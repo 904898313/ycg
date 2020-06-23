@@ -1,0 +1,81 @@
+
+.ideaBack{
+    width:910px;
+    margin-top:21px;
+    .title{
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+      padding-left:30px;
+      height:60px;
+      .line{
+      width: 5px;
+        height: 17px;
+        background-color: #f7c414;
+      }
+      span{
+        font-size: 16px;
+        color: #222222;
+        margin-left:16px;
+        font-weight: bold;
+        margin-right:10px;
+      }
+      .str{
+        font-size: 14px;
+          line-height: 15px;
+          color: #e74d4f;
+      }
+      p{
+        font-size: 14px;
+        color: #999999;
+      }
+    }
+    .uploadimg{
+      background-color: #fff;
+      width:100%;
+      padding:30px 0px 50px 50px ;
+
+    }
+    .Backtext{
+      width:100%;
+      background-color: #fff;
+      .title{
+        display: flex;
+        background-color: #fff;
+        align-items: center;
+        padding-left:30px;
+        height:60px;
+        i{
+          width: 5px;
+            height: 17px;
+            background-color: #f7c414;
+        }
+        span{
+          font-size: 16px;
+          color: #222222;
+          margin-left:16px;
+          font-weight: bold;
+          margin-right:10px;
+        }
+      }
+      .textarea{
+        padding:0px 30px;
+      }
+      .btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:30px 0px;
+        cursor: pointer;
+        span{
+          width: 132px;
+            height: 35px;
+          background-color: $ffc002;
+          font-size: 18px;
+          line-height: 35px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+  }

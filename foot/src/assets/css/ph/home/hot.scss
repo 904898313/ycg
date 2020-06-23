@@ -1,0 +1,53 @@
+.hotBox{
+  background-color: #ffffff;
+  margin-top: 0.2rem;
+  .hotTop{
+    height: 0.88rem;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.24rem;
+    >ul{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      li{
+        height: 0.88rem;
+        line-height: 0.88rem;
+        font-size: 0.32rem;
+        margin-right: 0.5rem;
+        color: #999999;
+      }
+      .hotliActive{
+        font-weight: bold;
+        color: #202021;
+        border-bottom: 0.04rem solid $ffc002;
+      }
+    }
+    >p{
+      display: flex;
+      align-items: center;
+      span{
+        font-size: 0.24rem;
+        color: #999999;
+        margin-right: 0.06rem;
+      }
+      .hotTop_icon{
+        margin-bottom: 0.08rem;
+      }
+    }
+  }
+  .grid_icon{
+    height: 0.82rem;
+    max-width: 0.82rem;
+  }
+  .checkMore{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #999999;
+    border-top: solid 1px #eeeeee;
+  }
+}

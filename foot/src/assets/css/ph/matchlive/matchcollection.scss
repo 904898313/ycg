@@ -1,0 +1,211 @@
+.container {
+    position: absolute;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #edeef3;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #30303d;
+    height: .88rem;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+
+    span {
+        color: #ffffff;
+    }
+
+    img {
+        position: absolute;
+        width: .48rem;
+        height: .48rem;
+        left: .22rem;
+    }
+}
+
+.collection {
+    .tabs {
+        background-color: #fff;
+        height: .88rem;
+        background-color: #edeef3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            color: #999999;
+            font-size: .3rem;
+            margin: 0rem .5rem;
+            display: flex;
+            align-items: center;
+
+            &:before {
+                content: '';
+                width: .08rem;
+                height: .08rem;
+                background-color: #edeef3;
+                margin-right: .19rem;
+            }
+        }
+
+        .active {
+            color: #202021;
+            display: flex;
+
+            &:before {
+                content: '';
+                width: .08rem;
+                height: .08rem;
+                background-color: #202021;
+            }
+        }
+    }
+
+    .title {
+        background-color: #fff;
+        height: .8rem;
+        display: flex;
+        padding: 0rem .23rem;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: .01rem solid #eeeeee;
+
+        p {
+            color: #202021;
+            font-size: .32rem;
+            font-weight: bold;
+        }
+
+        span {
+            color: #999999;
+            font-size: .24rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .collectionList {
+        background-color: #fff;
+
+        .info {
+            margin-left: .24rem;
+            border-bottom: .01rem #eeeeee solid;
+            padding: .25rem 0rem;
+
+            p {
+                color: #202021;
+                font-size: .28rem;
+                padding-right: .24rem;
+            }
+
+            span {
+                color: #999999;
+                font-size: .24rem;
+            }
+        }
+
+        :last-child {
+            border-bottom: none;
+        }
+    }
+
+
+}
+
+.taglist {
+    background-color: #fff;
+    margin-top: .2rem;
+
+    .title {
+        height: .88rem;
+        display: flex;
+        align-items: center;
+        border-bottom: .01rem #eeeeee solid;
+
+        span {
+            color: #202021;
+            font-size: .32rem;
+            font-weight: bold;
+            margin-left: .24rem;
+        }
+
+    }
+}
+
+.menusList {
+    background-color: #fff;
+    margin-top: .2rem;
+
+   
+}
+
+.classicvideo {
+    margin-top: .2rem;
+    background-color: #fff;
+
+    .title {
+        height: .88rem;
+        color: #202021;
+        font-size: .32rem;
+        line-height: .88rem;
+        font-weight: bold;
+        margin-left: .24rem;
+    }
+}
+
+.live {
+    background-color: #fff;
+    margin-top: .2rem;
+
+    .title {
+        height: .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem .24rem;
+
+        > :nth-child(1) {
+            color: #202021;
+            font-size: .32rem;
+            font-weight: bold;
+        }
+
+        > :nth-child(2) {
+            color: #999999;
+            font-size: .24rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .info {
+        height: .88rem;
+        display: flex;
+        align-items: center;
+        margin-left: .24rem;
+        border-bottom: .01rem #eeeeee solid;
+
+        .time {
+            width: 1.47rem;
+            height: .35rem;
+            background-color: #ffc002;
+            border-radius: .02rem;
+            color: #fff;
+            text-align: center;
+            line-height: .35rem;
+            font-size: .22rem;
+        }
+
+        .text {
+            color: #202021;
+            font-size: .28rem;
+            margin-left: .14rem;
+        }
+    }
+}

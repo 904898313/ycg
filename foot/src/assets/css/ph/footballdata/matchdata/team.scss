@@ -1,0 +1,98 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+
+}
+.tou{
+    width: 100%;
+	height: .88rem;
+    background-color: #000047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-family: PingFang-SC-Bold;
+	font-size: .34rem;
+	color: #ffffff;
+}
+    //球队导航
+    .nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .big{
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: .4rem 0;
+            .small{
+                height: 1.15rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .conts{
+                    width: .82rem;
+                    height: .82rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .text{
+                    width:100%;
+                    font-family: PingFang-SC-Medium;
+                    font-size: .24rem;
+                    line-height: .3rem;
+                    color: #222222;
+                    margin-top: .1rem;
+                }
+            }
+        }
+    }
+    ///bg
+    .bg{
+        width: 100%;
+        height: .2rem;
+        background-color: #edeef3;
+    }
+    //英超球队名单说明
+    .content-bigbox{
+        width: 100%;
+        header{
+            width: 100%;
+            height: .81rem;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eeeeee;
+            span:nth-child(1){
+                font-size: .3rem;
+                line-height: .26rem;
+                color: #202021;
+                border-left:  .06rem solid $ffc002;
+                padding-left: .1rem;
+                margin-left: .24rem;
+                font-family: PingFang-SC-Bold;
+                font-weight: 900;
+
+            }
+            span:nth-child(2){
+                font-size: .24rem;
+                line-height: .26rem;
+                letter-spacing: .01rem;
+                color: #999999;
+                margin-right: .24rem;
+            }
+        }
+        .textbox{
+            width: 100%;
+            height: 100%;
+            font-family: PingFang-SC-Medium;
+            font-size: .3rem;
+            line-height: .5rem;
+            color: #333333;
+            padding: .2rem .25rem;
+        }
+    }

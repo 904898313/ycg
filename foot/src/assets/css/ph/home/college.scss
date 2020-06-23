@@ -1,0 +1,81 @@
+.collegeBox{
+  background-color: #ffffff;
+  margin-top: 0.2rem;
+  .collegeList{
+    padding: 0 0.24rem;
+    .college_item{
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #eeeeee;
+      display: flex;
+      justify-content: space-between;
+      .item_lf{
+        width: 2.4rem;
+        height: 1.34rem;
+        border-radius: 0.04rem;
+        position: relative;
+        .college_img{
+          border-radius: 0.5rem;
+          width: 2.4rem;
+          height: 1.34rem;
+        }
+        >span{
+          width: 1.05rem;
+          height: 0.37rem;
+          padding: 0.08rem 0;
+          text-align: center;
+          background-color: rgba(0,0,0,0.4);
+          font-size: 0.18rem;
+          color: #ffffff;
+          position: absolute;
+          bottom: 0.1rem;
+        }
+        .tag_one{
+          left: 0.1rem;
+        }
+        .tag_two{
+          left: 1.25rem;
+        }
+      }
+      .item_rt{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0.19rem;
+        >p{
+          font-size: 0.3rem;
+          color: #202021;
+        }
+        .item_rt_bom{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          >span{
+            font-size: 0.24rem;
+            color: #999999;
+          }
+          .item_comment{
+            display: flex;
+            align-items: center;
+            .comment_icon{
+              display: flex;
+              align-items: center;
+              margin-left: 0.4rem;
+              >img{
+                width: 0.23rem;
+                height: 0.21rem;
+              }
+              >span{
+                font-size: 0.24rem;
+                color: #999999;
+                margin-left: 0.1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .college_item:last-child{
+      border-bottom: 0;
+    }
+  }
+}

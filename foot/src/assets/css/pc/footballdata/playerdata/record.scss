@@ -1,0 +1,330 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    // 场均数据
+    header{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        .contents{
+            width: 196px;
+            height: 60px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            border: solid 1px #dddddd;
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 20px;            
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p:nth-child(1){
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #333333;
+                    font-weight: 900;
+                }
+                p:nth-child(2){
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    line-height: 21px;
+                    color: #777777;
+                }
+                img{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+// 数据统计
+.total{
+    width: 100%;
+    height: 100%;
+    // 头部/赛季选择
+    .title{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .tit{
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 18px;
+            color: #00aded;
+            font-weight: 900;
+        }
+        .match{
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+            color: #293b49;
+            .listbox{
+                height: 22px;
+                width: 78px;
+                border: 1px solid #d6d6d6;
+                border-radius: 3px;
+                text-align: center; 
+            }
+            .listul{
+                z-index: 10;
+                display: none;
+                li{
+                    border: 1px solid #d6d6d6;
+                    cursor: pointer;
+                    background-color: red;
+                    z-index: 10;
+                }
+            }
+            .listbox:hover .listul{
+                display: block; 
+                height: 100%;
+            }
+        }
+    }
+    //表格内容
+    .table{
+        width: 100%;
+        height: 100%;
+        background-color: skyblue;
+        border-radius: 4px;
+        border: 1px solid #dddddd;
+        .row{
+            height: 33px;
+            background-color: #e8eaee;
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #333333;
+            display: flex;
+            align-items: center;
+            span{
+                border-bottom: 1px solid #dddddd;
+                border-right: 1px solid #dddddd;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                justify-content: center;
+                width: 50px;
+            }
+            span:nth-child(1){
+                width: 216px;
+                padding-left: 42px;
+                justify-content:flex-start;
+            }
+            span:nth-child(2){
+                flex: 1;
+            }
+            span:nth-child(3){
+                flex: 1;
+            }
+            span:nth-child(8){
+                flex: 1;
+            }
+            span:nth-child(9){
+                flex: 1;
+            }
+        }
+        .rowcenter{
+            background-color: #ffffff;
+            span:nth-child(1){
+                width: 216px;
+                padding-left: 20px;
+                justify-content:flex-start;
+                display: flex;
+                align-items: center;       
+                font-weight: 900;         
+                img{
+                    margin-right: 5px;
+                }
+            }
+        }
+        .lastrow{
+            font-weight: 900;
+            span:nth-child(1){
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 14px;
+                color: #555555;
+            }
+        }
+    }
+    .text{
+        width: 100%;
+        height: 40px;
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        color: #777777;
+        display: flex;
+        align-items: center;
+    }
+}
+//分类统计
+.sort{
+    width: 100%;
+    height: 100%;
+        //头部导航
+        .nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            //默认样式
+            span{
+                display: block;
+                height: 22px;
+                line-height: 22px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid #f7f7f7;
+                margin-right: 15px;
+                color: #999999;
+                img{
+                    display: block;
+                    width: 12px;
+                    height: 8px;
+                    background-color: skyblue;
+                    margin-right: 4px;
+                }
+            }
+            //选中样式
+            .select{
+                border-bottom: 2px solid #00aded;
+                color: #00aded;
+            }
+        }
+        //表格内容
+        .table{
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            border: 1px solid #dddddd;
+            .row{
+                height: 33px;
+                background-color: #e8eaee;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+                display: flex;
+                align-items: center;
+                span{
+
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    justify-content: center;
+                    width: 50px;
+                }
+                span:nth-child(1){
+                    width: 80px;
+                }
+                span:nth-child(2){
+                    width: 100px;
+                }
+                span:nth-child(3){
+                    flex: 1;
+                }
+                span:nth-child(5){
+                    flex: 1;
+                }
+                span:nth-child(6){
+                    width: 85px;
+                }
+                span:nth-child(10){
+                    width: 85px;
+                }
+            }
+            .rowcenter{
+                background-color: #ffffff;
+                span{
+                    border-bottom: 1px solid #dddddd;
+                    border-right: 1px solid #dddddd;
+                }
+                span:nth-child(1){
+                    background-color: #ff3334;   
+                    color: #ffffff;  
+                }
+                span:nth-child(3){
+                    color: #0066c0;
+                    font-weight: 900;
+                }
+                span:nth-child(5){
+                    color: #0066c0;
+                    font-weight: 900;                    
+                }
+            }
+        }
+        //分页
+        .paging{
+            width: 100%;
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #777777;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 13px;
+            padding-bottom: 28px;
+        }
+}
+//数据频率统计
+.rate{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    header{
+        width: 100%;
+        height: 35px;
+        background-color: #e8eaee;
+        border: solid 1px #dddddd;
+        text-indent: 20px;
+        font-size: 14px;
+        color: #00aded;
+        margin-bottom: 0;
+        font-weight: 900;
+    }
+    .contents{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: #ffffff;
+        flex-wrap: wrap;
+        div{
+            width: 50%;
+            height: 30px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border: 1px solid #dddddd;
+            .left{
+                width: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .weight{
+                font-weight: 900;
+                margin: 0 3px;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 7px;
+                }
+            }
+        }
+        div:nth-child(1){
+            border-right: 1px solid #dddddd;
+        }
+    }
+}

@@ -1,0 +1,2420 @@
+.bigbox{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f6fa;
+    padding-top: 15px;
+    padding-bottom: 100px;
+}
+// 情报分析
+.analysis{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    margin-bottom: 20px;
+    .head{
+        width: 100%;
+        height: 46px;
+        background-color: #ffffff;
+        border: solid 1px #eeeeee;
+        display: flex;
+        align-items: center;
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        color: #333333;
+        margin-bottom: 10px;
+        img{
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin: 0 7px 0 15px;
+        }
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        // 主/客场球队
+        .contents{
+            width: 380px;
+            height: 100%;
+            background-color: #f7f7f8;
+            border: solid 1px #eeeeee;
+            header{
+                width: 100%;
+                height: 46px;
+                background-color: #ffffff;
+                border-bottom: solid 1px #eeeeee;
+                display: flex;
+                align-items: center;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #333333;
+                img{
+                    margin: 0 8px 0 18px;
+                }
+                p{
+                    width: 33px;
+                    height: 19px;
+                    background-color: #fff7f7;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    margin: 0 7px;
+                }
+                .zhu{
+                    border: solid 1px #f34f43;
+                    color: #f34f43;
+                }
+                .ke{
+                    border: solid 1px #558cd4;
+                    color: #558cd4;
+                }
+            }
+            .body{
+                width: 100%;
+                .title{
+                    width: 380px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+                .good{
+                    background-color: #f34f43;
+                }
+                .bad{
+                    background-color: #80838a;
+                }
+                .textbox{
+                    width: 100%;
+                    height: 100%;
+                    padding: 12px 15px;
+                    div{
+                        margin-bottom: 12px;
+                        span{
+                            font-family: MicrosoftYaHei;
+                            font-size: 12px;
+                            line-height: 24px;
+                            color: #333333;
+                        }
+                        p{
+                            
+                            width: 40px;
+                            height: 20px;
+                            border-radius: 2px;
+                            font-family: MicrosoftYaHei;
+                            font-size: 12px;
+                            color: #ffffff;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 20px;
+                            margin-right: 10px;
+                        }
+                        .state{
+                            background-color: #45e28c;
+                        }
+                        .strength{
+                            background-color: #e37546;
+                        }
+                    }
+                }
+            }
+            .g{
+                background-color: #ffffff;
+            }
+        }
+        // 会员情报
+        .report{
+            width: 380px;
+            height: 100%;
+            background-color: #f7f7f8;
+            border: solid 1px #eeeeee;
+            header{
+                width: 100%;
+                height: 46px;
+                background-color: #ffffff;
+                border-bottom: solid 1px #eeeeee;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #333333;
+                img{
+                    margin: 0 6px;
+                }
+            }
+            .body{
+                width: 100%;
+                .title{
+                    width: 380px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+                .good{
+                    background-color: #e3cb9c;
+                }
+                .bad{
+                    background-color: #f9c155;
+                }
+                .textbox{
+                    width: 100%;
+                    height: 100%;
+                    padding: 12px 15px;
+                    position: relative;
+                    div{
+                        margin-bottom: 12px;
+                        span{
+                            font-family: MicrosoftYaHei;
+                            font-size: 12px;
+                            line-height: 24px;
+                            color: #333333;
+                        }
+                        p{
+                            
+                            width: 40px;
+                            height: 20px;
+                            border-radius: 2px;
+                            font-family: MicrosoftYaHei;
+                            font-size: 12px;
+                            color: #ffffff;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 20px;
+                            margin-right: 10px;
+                            background-color: #e3cb9c;
+                        }
+                        // 会员情报
+                        .member{
+                            background-color: #f9c155;
+                        }
+                    }
+                    .bg{
+                        filter: blur(5px);
+                        margin: 0;
+                    }
+                    
+                    .small{	
+                        width: 177px;
+                        height: 36px;
+                        background-color: #f9c155;
+                        border-radius: 2px;
+                        position: absolute;
+                        top: 80px;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        margin: auto;
+                        z-index: 100;
+                        font-family: MicrosoftYaHei;
+                        font-size: 14px;
+                        color: #ffffff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                    }
+                }
+                .textbox2{
+                    background-color: #fffaf2;
+                    border-bottom: 2px solid #f9c155;
+                }
+            }
+        }
+    }
+}
+//必发指数
+.exponent{
+    width: 1200px;
+    height: 100%;
+    margin-bottom: 20px;
+    .from{
+        width: 100%;
+        height: 100%;
+        border: solid 1px #f0f0f0;
+        // 必发标盘数据对比
+        header{
+            width: 1200px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: MicrosoftYaHei;
+            background-color: #ffffff;
+            border: 1px solid #eeeeee;
+            p:nth-child(1){
+                font-size: 12px;
+                color: #666666;
+                margin-left: 17px;
+            }
+            p:nth-child(2){
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                color: #666666;
+                span{
+                    display: flex;
+                    width: 82px;
+                    height: 24px;
+                    border-radius: 12px;
+                    border: solid 1px #eeeeee;
+                    margin: 0 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        .conent{
+            width: 1202px;
+            height: 100%;
+            .head{
+                height: 66px;
+                background-color: #f7f7f8;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #999999;
+                .two{
+                    flex-direction: column;
+                    article{
+                        width: 100%;
+                        flex: 1;
+                        border: 0;
+                        border-bottom: 1px solid #f0f0f0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+                        span{
+                            width: 82px;
+                            height: 24px;
+                            background-color: #ffffff;
+                            border-radius: 12px;
+                            border: solid 1px #eeeeee;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        img{
+                            margin: 0 3px;
+                        }
+                        p{
+                            height: 100%;
+                            flex: 1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+                .flex{
+                    flex-direction: column;
+                }
+            }
+            .body{
+                height: 35px;
+                background-color: #ffffff;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+            }
+            .public{
+                width: 100%;
+                display: flex;
+                border-top: 1px solid #eee;
+                div{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: 1px solid #f0f0f0;
+                    p{
+                        flex: 1;
+                        height: 100%;
+                        border-right: 1px solid #eeeeee;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    p:nth-last-child(1){
+                        border: 0;
+                    }
+                }
+                div:nth-child(1){
+                    width: 82px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #999999;
+                }
+                div:nth-child(2){
+                    width: 278px;
+                }
+                div:nth-child(3){
+                    width: 465px;
+                }
+                .flex{
+                    flex: 1;
+                }
+            }
+        }
+        // 必发大小球数据
+        .conents{
+            width: 1200px;
+            height: 100%;
+            .head{
+                height: 33px;
+                background-color: #f7f7f8;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #999999;
+            }
+            .body{
+                height: 35px;
+                background-color: #ffffff;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+            }
+            .public{
+                width: 100%;
+                border-top: 1px solid #eeeeee;
+                display: flex;
+                div{
+                    border-right: 1px solid #eeeeee;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                div:nth-child(1){
+                    width: 82px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #999999;
+                }
+                .flex{
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+//历史交锋
+.history{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    .content{
+        width: 100%;
+        height: 100%;
+        border: solid 1px #f0f0f0;
+        //导航头部
+        .head{
+            height: 46px;
+            background-color: #ffffff;
+            div:nth-child(1){
+                align-items: center;
+                justify-content: space-between;
+                h1:nth-child(1){
+                    font-weight: 400;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #333333;
+                    margin-left: 17px;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        margin: 0 6px;
+                    }
+                }
+                h1:nth-child(2){
+                    font-weight: 400;
+                    margin-right: 17px;
+                    display: flex;
+                    align-items: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #b8b8b8;
+                    span{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .one{
+                        width: 82px;
+                        height: 24px;
+                        border-radius: 12px;
+                        border: solid 1px #eeeeee;
+                        margin-right: 14px;
+                    }
+                    .elem{ 
+                        align-items: center;
+                        font-family: MicrosoftYaHei;
+                        font-size: 12px;
+                        color: #b8b8b8;
+                    }
+                    img{
+                        display: block;
+                        margin: 0 4px;
+                    }
+                }
+            }
+            .two{
+                span{
+                    padding: 0 15px;
+                    margin: 0 3px;
+                    height: 24px;
+                    background-color: #ffffff;
+                    border-radius: 12px;
+                    border: solid 1px #eeeeee;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #999999;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        margin-left: 5px;
+                    }
+                }
+                .el{
+                    width: 56px;
+                    height: 24px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        //表头
+        .body{
+            height: 36px;
+            background-color: #ffffff;
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #999999;
+            div:nth-child(1){
+                h1{
+                    height: 100%;
+                    border-right: 1px solid #f0f0f0;
+                    display: flex;
+                    align-items: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #999999;
+                    font-weight: 400;
+                    height: 100%;
+                }
+                h1:nth-child(1){
+                    width: 82px;
+                    padding-left: 10px;
+                    .kuai{
+                        width: 4px;
+                        height: 4px;
+                        margin-right: 5px;
+                    }
+                }
+                h1:nth-child(2){
+                    width: 95px;
+                    padding-left: 12px;
+                }
+                h1:nth-child(3){
+                    width: 230px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    span:nth-child(2){
+                        width: 45px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    span:nth-child(1){
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                    }
+                    span:nth-child(3){
+                        flex: 1;
+                    }
+                }
+                h1:nth-child(4){
+                    flex: 1;
+                    justify-content: center;
+                    border: 0;
+                }
+            }
+            .flex{
+                span{
+                    flex: 1;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                }
+                .a{
+                    color: #d26b5e;
+                }
+                .b{
+                    color: #f3bd43;
+                }
+                .c{
+                    color: #57dff0;
+                }
+            }
+            div:nth-last-child(1){
+                p:nth-last-child(1){
+                    border: 0;
+                }
+            }
+        }
+        // 表格循环内容区
+        .bodys{
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #333333;
+            div:nth-child(1){
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+                h1{
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #333333;
+                    .kuai{
+                        background-color: #ff00fb;
+                    }
+                }
+                h1:nth-child(3){
+                    span:nth-child(2){
+                        color: #f65e53;
+                        font-weight: 900;
+                    }
+                }
+                h1:nth-last-child(1){
+                    color: #f65e53;
+                    font-weight: 900;
+                }
+            }
+            .flex{
+                .a{
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 12px;
+                    color: #333333;
+                    font-weight: 900;
+                }
+                .b{
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 12px;
+                    color: #333333;
+                    font-weight: 900;
+                }
+                .c{
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 12px;
+                    color: #333333;
+                    font-weight: 900;
+                }
+            }
+            div:nth-last-child(1){
+                p:nth-child(1){
+                    color: #f65e53;
+                }
+                p:nth-child(2){
+                    color: #2fcc87;
+                }
+                p:nth-child(3){
+                    color: #a6b2be;
+                }
+            }
+        }
+        .bodys:nth-child(odd){
+            background-color: #f7f7f8;
+        }
+        //公用
+        .public{
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #f0f0f0;
+            div{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid #f0f0f0;
+                p{
+                    height: 100%;
+                    border-right: 1px solid #f0f0f0;
+                }
+            }
+            div:nth-child(1){
+                width: 455px;
+            }
+            div:nth-child(2){
+                width: 200px;
+                background-color: rgba(246, 94, 83, 0.05);
+                
+            }
+            div:nth-child(3){
+                width: 200px;
+                background-color: rgba(255, 179, 0, 0.05);
+            }
+            div:nth-child(4){
+                width: 200px;
+                background-color: rgba(63, 214, 241, 0.05);
+            }
+            div:nth-child(5){
+                flex: 1;
+                p{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        //表尾
+        .foot{
+            width: 100%;
+            height: 34px;
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            span{
+                font-weight: 900;
+            }
+            span:nth-child(1){
+                color: #f65e53;
+            }
+            span:nth-child(2){
+                color: #b5c8dd;
+            }
+            span:nth-child(3){
+                color: #2fcc87;
+            }
+            span:nth-child(4){
+                color: #f65e53;
+            }
+            span:nth-child(5){
+                color: #ff995b;
+            }
+            span:nth-child(6){
+                color: #3fd6f1;
+            }
+        }
+    }
+}
+
+//近期战绩/复用
+.lately{
+    margin-bottom: 20px;
+    .content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .contents{
+            width: 590px;
+            height: 100%;
+            border: solid 1px #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            // 导航头部
+            header{
+                width: 100%;
+                height: 46px;
+                display: flex;
+                justify-content: space-between;
+                background-color: #ffffff;
+                border-bottom: 1px solid #f0f0f0;
+                .left{
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #333333;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 10px;
+                    img{
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 7px;
+                    }
+                }
+                .right{
+                    display: flex;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #b8b8b8;
+                    margin-right: 10px;
+                    div{
+                        display: flex;
+                        align-items: center;
+                        p:nth-child(1){
+                            margin-right: 8px;
+                        }
+                        .elem{ 
+                            align-items: center;
+                            font-family: MicrosoftYaHei;
+                            font-size: 12px;
+                            color: #b8b8b8;
+                        }
+                    }
+                    .one1{
+                        margin-right: 30px;
+                    }
+                    p{
+                        padding: 0 14px;
+                        height: 24px;
+                        border-radius: 12px;
+                        border: solid 1px #eeeeee;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img{
+                            margin: 0 4px;
+                        }
+                    }
+                }
+            }
+            //public
+            .public{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #f0f0f0;
+                .flex{
+                    flex: 1;
+                    justify-content: center;
+                }
+                div{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    border-right: 1px solid #f0f0f0;
+                }
+            }
+            //近期战绩
+            //头
+            .latelypublic{
+                height: 36px;
+                div:nth-child(1){
+                    width: 82px;
+                    padding-left: 10px;
+                }
+                div:nth-child(2){
+                    padding-left: 10px;
+                    width: 95px;
+                }
+                div:nth-child(3){
+                    width: 230px;
+                    justify-content: center;
+                    p{
+                        display: flex;
+                        align-items: center;
+                    }
+                    p:nth-child(2){
+                        width: 40px;
+                        justify-content: center;
+                    }
+                    .flexp{
+                        flex: 1;
+                    }
+                    .flexp:nth-child(1){
+                        justify-content: flex-end;
+                    }
+                }
+                .felx{
+                    flex: 1;
+                }
+            }
+            .latelyhead{
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #999999;
+                background-color: #ffffff;
+            }
+            //内容
+            .latelybody{
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+                div:nth-child(1){
+                    span{
+                        width: 4px;
+                        height: 4px;
+                        background-color: #ff00fb;
+                        margin-right: 5px;
+                    }
+                }
+                div:nth-child(3){
+                    p:nth-child(2){
+                        font-family: MicrosoftYaHei-Bold;
+                        font-size: 12px;
+                        color: #f65e53;
+                        font-weight: 900;
+                    }
+                }
+                .flex:nth-child(4){
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 12px;
+                    color: #f65e53;
+                    font-weight: 900;
+                }
+                .flex:nth-child(5){
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 12px;
+                    color: #f65e53;
+                    font-weight: 900;
+                }
+                .flex:nth-child(6){
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 12px;
+                    color: #2fcc87;
+                    font-weight: 900;
+                }
+                .flex:nth-child(7){
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 12px;
+                    color: #a6b2be;
+                    font-weight: 900;
+                }
+            }
+            .latelybody:nth-child(odd){
+                background-color: #f7f7f8;
+            }
+            .latelybody:nth-child(even){
+                background-color:#ffffff;
+            }
+            // 尾
+            .foot{
+                width: 100%;
+                height: 38px;
+                border: solid 1px #f0f0f0;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #999999;
+                display: flex;
+                align-items: center;
+                background-color: #ffffff;
+                padding-left: 19px;
+                span{
+                    font-weight: 900;
+                }
+                span:nth-child(1){
+                    color: #f65e53;
+                }
+                span:nth-child(2){
+                    color: #b5c8dd;
+                }
+                span:nth-child(3){
+                    color: #2fcc87;
+                }
+                span:nth-child(4){
+                    color: #f65e53;
+                }
+                span:nth-child(5){
+                    color: #ff995b;
+                }
+                span:nth-child(6){
+                    color: #3fd6f1;
+                }
+            }
+            //联赛排名
+            //公用
+            .rankingpublic{
+                height: 36px;
+                div:nth-child(1){
+                    width: 75px;
+                    justify-content: center;
+                }
+                div:nth-last-child(1){
+                    border: 0;
+                }
+            }
+            //头
+            .rankinghead{
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #999999;
+                background-color: #ffffff;
+                div:nth-child(1){
+                    color: #333333;
+                }
+            }
+            //身
+            .rankingbody{
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+            }
+            .rankingbody:nth-child(odd){
+                background-color: #f7f7f8;
+            }
+            .rankingbody:nth-child(even){
+                background-color: #ffffff;
+            }
+            //尾
+            .foot1{
+                width: 100%;
+                height: 38px;
+                border: solid 1px #f0f0f0;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #999999;
+                display: flex;
+                align-items: center;
+                background-color: #ffffff;
+                padding-left: 19px;
+                span{
+                    color: #7487b5;
+                }
+            }
+            //未来赛程
+            //公用
+            //head
+            .futurehead{
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #999999;
+                background-color: #ffffff;
+            }
+            //body
+            .futurebody{
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+                .green{
+                    color: #34bb5a;
+                }
+                div:nth-child(1){
+                    span{
+                        display: block;
+                        width: 4px;
+                        height: 4px;
+                        background-color: #ff00fb;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .futurebody:nth-child(odd){
+                background-color: #f7f7f8;
+            }
+            .futurebody:nth-child(even){
+                background-color: #ffffff;
+            }
+            //联赛盘路走势
+            //公用
+            .trendpublic{
+                height: 36px;
+                div:nth-child(1){
+                    width: 82px;
+                }
+                .flex{
+                    flex: 1;
+                }
+            }
+            //头
+            .trendhead{
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+                background-color: #ffffff;
+                div:nth-child(1){
+                    justify-content: center;
+                    span{
+                        width: 4px;
+                        height: 4px;
+                        margin-right: 5px;
+                    }
+                    .hong{
+                        background-color: #f55e53;
+                    }
+                    .lan{
+                        background-color: #3fd6f1;
+                    }
+                }
+            }
+            //内容
+            .trendbody{
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+                div:nth-child(1){
+                    p{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%;
+                    }
+                    p:nth-child(1){
+                        width: 50px;
+                        border-right: 1px solid #f0f0f0;
+                        font-family: MicrosoftYaHei;
+                        font-size: 12px;
+                        color: #999999;
+                    }
+                    p:nth-child(2){
+                        flex: 1;
+                    }
+                }
+            }
+            .two:nth-child(even){
+                background-color: #ffffff;
+            }
+            .two:nth-child(odd){
+                background-color: #f7f7f8;
+            }
+            .one{
+                background-color: #fff7f6;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #999999;
+            }
+            // 尾
+            .trendfoot{
+                width: 100%;
+                height: 36px;
+                background-color: #ffffff;
+                border: solid 1px #f0f0f0;
+                display: flex;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+                margin-bottom: 10px;
+                div{
+                    height: 100%;
+                    border-right: 1px solid #eeeeee;
+                    display: flex;
+                    align-items: center;
+                }
+                div:nth-child(1){
+                    width: 82px;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    p:nth-child(1){
+                        width: 49px;
+                        height: 100%;
+                        border-right: 1px solid #eeeeee;
+                        color: #999999;
+                    }
+                    p:nth-child(2){
+                        flex: 1;
+                    }
+                }
+                .last{
+                    flex: 1;
+                    p{
+                        height: 100%;
+                        border-right: 1px solid #eee;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    p:nth-child(1){
+                        width: 151px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        .zou{
+                            color: #a6b2be;
+                        }
+                        .yin{
+                            color: #f55e53;
+                        }
+                        .shu{
+                            color: #2fcc87;
+                        }
+                    }
+                    .flex{
+                        flex: 1;
+                    }
+                }
+                div:nth-child(3){
+                    flex: 1;
+                }
+            }
+
+            //相同盘路
+            //样式与未来赛程相同
+            .a{
+                color: #f55e53;
+            }
+            .b{
+                color: #333333;
+            }
+            .zou{
+                color: #a6b2be;
+            }
+            .yin{
+                color: #f55e53;
+            }
+            .shu{
+                color: #2fcc87;
+            }
+
+            //
+        }
+    }
+}
+
+//上下半场进球数及分布/复用
+.total{
+    margin-bottom: 20px;
+    .nav{
+        width: 100%;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        p:nth-child(1){
+            width: 62px;
+            height: 24px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            border: solid 1px #eeeeee;
+            margin-right: 25px;
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                margin: 0 4px;
+            }
+        }
+        .elem{
+            color: #999;
+        }
+    }
+    .content{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .public{
+            width: 590px;
+            height: 100%;
+            background-color: #ffffff;
+            border: solid 1px #f0f0f0;
+            header{
+                width: 100%;
+                height: 46px;
+                background-color: #ffffff;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #333333;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-left: 10px;
+                    margin-right: 8px;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            div{
+                width: 100%;
+                height: 36px;
+                border-bottom: 1px solid #f0f0f0;
+                display: flex;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #333333;
+                p{
+                    border-right: 1px solid #f0f0f0;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                p:nth-child(1){
+                    width: 75px;
+                }
+                p:nth-last-child(1){
+                    width: 107px;
+                }
+                p:nth-last-child(1){
+                    border: 0;
+                }
+                .flex{
+                    flex: 1;
+                }
+            }
+            .head{
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #999999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p:nth-child(1){
+                    color: #333333;
+                }
+            }
+            .zhu{
+                background-color: #f7f7f8;
+            }
+        }
+
+        .left{
+            .head{
+                background-color: #fff7f6;
+            }
+        }
+        .right{
+            .head{
+                background-color: #f5fdfe;
+            }
+        }
+    }
+}
+
+// 进球角球时间分布
+.time{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    .contents{
+        width: 100%;
+        height: 370px;
+        margin-bottom: 10px;
+        .head{
+            width: 100%;
+            height: 45px;
+            border: solid 1px #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            color: #333333;
+            img{
+                display: block;
+                width: 20px;
+                height: 20px;
+                margin-right: 7px;
+            }
+        }
+        .body{
+            width: 100%;
+            height: 270px;
+            background-color:#ffffff;
+            border: solid 1px #f0f0f0;
+            border-top: 0;
+            border-bottom: 0;
+            padding: 30px;
+            padding-bottom: 0;
+            display: flex;
+            .left{
+                width: 60px;
+                height: 100%;
+                position: relative;
+                p{
+                    width: 13px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #999999;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -50px;
+                }
+            }
+            .right{
+                width: 1078px;
+                height: 213px;
+                border-left: 1px solid #e1e1e1;
+                position: relative;
+                .p{
+                    height: 1px;
+                    width: 1086px;
+                    margin-left: -8px;
+                    background-color: #e1e1e1;
+                    position: absolute;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #202021;
+                    span{
+                        position: absolute;
+                        display: block;
+                        width: 20px;
+                        left: -25px;
+                        top: -10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                    }
+                }
+                .p1{
+                    top: 11px;
+                }
+                .p2{
+                    top: 61px;
+                }
+                .p3{
+                    top: 111px;
+                    z-index: 10000;
+                }
+                .p4{
+                    top: 161px;
+                }
+                .p5{
+                    top: 211px;
+                }
+                .data{
+                    width: 100%;
+                    display: flex;
+                    height: 1px;
+                    position: absolute;
+                    top: 111px;
+                    .big{
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 1px;
+                        .small{
+                            width: 16px;
+                            height: 1px;
+                            position: relative;
+                            p{
+                                position: absolute;
+                                width: 100%;
+                                span{
+                                    font-family: PingFang-SC-Medium;
+                                    font-size: 10px;
+                                    color: #333333;
+                                }
+                            }
+                            .one{
+                                bottom: 0;
+                                background-color: #f55e53;
+                                span{
+                                    position: absolute;
+                                    display: block;
+                                    width: 100%;
+                                    text-align: center;
+                                    top: -20px;
+                                }
+                            }
+                            .two{
+                                top: 0;
+                                background-color: #2fcc86;
+                                span{
+                                    position: absolute;
+                                    display: block;
+                                    width: 100%;
+                                    text-align: center;
+                                    bottom: -20px;
+                                }
+                            }
+                            .san{
+                                bottom: 0;
+                                background-color: #ffc002;
+                                span{
+                                    position: absolute;
+                                    display: block;
+                                    width: 100%;
+                                    text-align: center;
+                                    top: -20px;
+                                }
+                            }
+                            .si{
+                                top: 0;
+                                background-color: #588bfe;
+                                span{
+                                    position: absolute;
+                                    display: block;
+                                    width: 100%;
+                                    text-align: center;
+                                    bottom: -20px;
+                                }
+                            }
+                        }
+                        .start{
+                            margin-right: 4px;
+                        }
+                    }
+                }
+                .bottombox{
+                    position: absolute;
+                    top: 213px;
+                    width: 100%;
+                    display: flex;
+                    .flexbox{
+                        flex: 1;
+                        height: 10px;
+                        border-left:1px solid #eee; 
+                        border-right:1px solid #eee; 
+                        position: relative;
+                        p{
+                            position: absolute;
+                            top: 10px;
+                            font-family: MicrosoftYaHei;
+                            font-size: 10px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            letter-spacing: 0px;
+                            color: #202021;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+        .zhu{
+            background-color: #fff7f6;
+        }
+        .ke{
+            background-color: #f5fdfe;
+        }
+
+        .iconbox{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 22px 0;
+            p{
+                width: 12px;
+                height: 12px;
+                background-color: red;
+                margin-left: 20px;
+                margin-right: 7px;
+            }
+            .p1{
+                background-color: #f55e53;
+            }
+            .p2{
+                background-color: #2fcc86;
+            }
+            .p3{
+                background-color: #ffc002;
+            }
+            .p4{
+                background-color: #588bfe;
+            }
+            span{
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #202021;
+            }
+        }
+    }
+}
+//本赛季数据统计比较
+.compare{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+    .conent{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        //主队
+        .left{
+            width: 590px;
+            height: 100%;
+            .sub{
+                border-left: solid 1px #f0f0f0;
+                .communal{
+                    .text{
+                        justify-content: flex-end;
+                        padding-right: 9px;
+                    }
+                    .data{
+                        padding-right: 20px;
+                        justify-content: flex-end;
+                        span{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+            .foot{
+                .communal{
+                    .text{
+                        flex: 1;
+                    }
+                }
+            }
+        }
+        //客队
+        .right{
+            width: 590px;
+            height: 100%;
+            .sub{
+                border-right: solid 1px #f0f0f0;
+                .communal{
+                    .text{
+                        justify-content: flex-start;
+                        padding-left: 9px;
+                    }
+                    .see{
+                        p{
+                            float: right;
+                        }
+                    }
+                    .data{
+                        padding-left: 20px;
+                        justify-content: flex-start;
+                        span{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            .foot{
+                .communal{
+                    .text{
+                        flex: 1;
+                    }
+                }
+            }
+        }
+        //公用
+        .public{
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            margin-bottom: 10px;
+            .clas{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                border: solid 1px #f0f0f0;
+                .aside{
+                    width: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #999999;
+                }
+                .sub{
+                    flex: 1;
+                    height: 100%;
+                    .communal{
+                        height: 9px;
+                        width: 100%;
+                        padding: 14px 0;
+                        display: flex;
+                        align-items: center;
+                        font-family: MicrosoftYaHei;
+                        font-size: 12px;
+                        color: #333333;
+                        .text{
+                            width: 78px;
+                            display: flex;
+                            align-items: center;
+                            line-height: 9px;
+                        }
+                        .see{
+                            width: 342px;
+                            height: 9px;
+                            background-color: #f0f0f0;
+                            p{
+                                height: 100%;
+                            }
+                            .hong{
+                                background-color: #f55e53;
+                            }
+                            .hui{
+                                background-color: #a6b2be;
+                            }
+                            .lu{
+                                background-color: #2fcc86;
+                            }
+                            .huang{
+                                background-color: #f0f0f0;
+                            }
+                        }
+                        .data{
+                            width: 108px;
+                            line-height: 9px;
+                            display: flex;
+                            align-items: center;
+                            span{
+                                color: #999999;
+                            }
+                        }
+                    }
+                    // 胜
+                    .win{
+
+                    }
+                }
+            }
+        }
+        header{
+            width: 100%;
+            height: 45px;
+            border: solid 1px #f0f0f0;
+            display: flex;
+            align-items: center;
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            color: #333333;
+        }
+        .zhu{
+            background-color: #fff7f6;
+            p{
+                width: 4px;
+                height: 4px;
+                background-color: #f55e53;
+                margin: 0 5px 0 14px;
+            }
+        }
+        .ke{
+            background-color: #f5fdfe;
+            p{
+                width: 4px;
+                height: 4px;
+                background-color: #3fd6f1;
+                margin: 0 5px 0 14px;
+            }
+        }
+    }
+}
+//投票竞猜
+.vote{
+    width: 100%;
+	height: 296px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    header{
+        width: 100%;
+        height: 44px;
+        background-color: #ffc002;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Tensentype-XiChaoYuanJ;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .title{
+        font-family: Tensentype-XiChaoYuanJ;
+        font-size: 20px;
+        line-height: 20px;
+        height: 20px;
+        color: #333333;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 27px;
+        span{
+            color: #999999;
+        }
+    }
+    .choice{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .choices{
+            width: 200px;
+            height: 86px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            border: solid 1px #eeeeee;
+            margin: 0 15px;
+            display: flex;
+            cursor: pointer;
+            position: relative;
+            .bg{
+                width: 30px;
+                height: 86px;
+                background-color: #ffcd35;
+                border-radius: 4px 0px 0px 4px;
+            }
+            .bgimg{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            .content{
+                flex: 1;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                letter-spacing: 0px;
+                img{
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 8px;
+                }
+                .flex{
+                    display: flex;
+                    flex-direction: column;
+                    span:nth-child(1){
+                        color: #333333;
+                    }
+                    span:nth-child(2){
+                        color: #cd1022;
+                    }
+                }
+            }
+            .center{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 4px 0;
+                    .flexspan{
+                        display: flex;
+                        align-items: center;
+                    }
+                    .color{
+                        color: #cd1022;
+                        margin-right: 13px;
+                    }
+                }
+                img{
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-left: 20px;
+                }
+            }
+        }
+        .select{
+            border: 1px solid #ffc002;
+        }
+    }
+    .votes{
+        width: 98px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 14px;
+        line-height: 14px;
+        color: #ffffff;
+        margin: auto;
+        margin-top: 20px;
+        .el{
+            background-color: #ffc002;
+            height: 30px;
+            line-height: 0px;
+        }
+    }
+}
+//阵容情况
+.lineup{
+    width: 100%;
+    height: 100%;
+    .content{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        .head{
+            width: 100%;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .center{
+                width: 457px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .l{
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    line-height: 12px;
+                    height: 12px;
+                    font-weight: 900;
+                    span{
+                        color: #2159a0;
+                    }
+                }
+            }
+            .l:nth-child(1){
+                align-items: flex-end;
+                p{
+                    span:nth-child(1){
+                        color: #cd1022;
+                    }
+                }
+            }
+        }
+        .body{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .center{
+                width: 390px;
+                height: 540px;
+                position: relative;
+                .bgimg{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    z-index: 1;
+                }
+                div{
+                    position: absolute;
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        position: absolute;
+                        top: 0;
+                        z-index: 1;
+                    }
+                    span{
+                        z-index: 10;
+                        font-family: SFProText-Bold;
+                        font-size: 11px;
+                        color: #ffffff;
+                        font-weight: 900;
+                    }
+                }
+                .z1{
+                    top: 30px;
+                    left: 181px;
+                }
+                .z2{
+                    top: 78px;
+                    left: 38px;
+                }
+                .z3{
+                    top:78px;
+                    left: 126px;
+                }
+                .z4{
+                    top: 78px;
+                    left: 235px;
+                }
+                .z5{
+                    top: 78px;
+                    left: 323px;
+                }
+                .z6{
+                    top: 139px;
+                    left: 80px;
+                }
+                .z7{
+                    top: 139px;
+                    left:181px;
+                }
+                .z8{
+                    top: 139px;
+                    left:282px;
+                }
+                .z9{
+                    top: 220px;
+                    left: 123px;
+                }
+                .z10{
+                    top: 199px;
+                    left: 181px;
+                }
+                .z11{
+                    top: 220px;
+                    left: 238px;
+                }
+                .a1{
+                    bottom: 30px;
+                    left: 181px;
+                }
+                .a2{
+                    bottom: 78px;
+                    left: 38px;
+                }
+                .a3{
+                    bottom:78px;
+                    left: 126px;
+                }
+                .a4{
+                    bottom: 78px;
+                    left: 235px;
+                }
+                .a5{
+                    bottom: 78px;
+                    left: 323px;
+                }
+                .a6{
+                    bottom: 139px;
+                    left: 80px;
+                }
+                .a7{
+                    bottom: 139px;
+                    left:181px;
+                }
+                .a8{
+                    bottom: 139px;
+                    left:282px;
+                }
+                .a9{
+                    bottom: 220px;
+                    left: 123px;
+                }
+                .a10{
+                    bottom: 199px;
+                    left: 181px;
+                }
+                .a11{
+                    bottom: 220px;
+                    left: 238px;
+                }
+            }
+            .public{
+                flex: 1;
+                height: 540px;
+                div{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 42px;
+                    padding: 9px 0;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #333333;
+                    p{
+                        display: flex;
+                        align-items: center;
+                    }
+                    .last{
+                        width: 86px;
+                    }
+                    .img{
+                        display: block;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        border: 1px solid #eeeeee;
+                        margin: 0 20px;
+                    }
+                    .hao{
+                        width: 50px;
+                    }
+                    .name{
+                        flex: 1;
+                    }
+                    //位置颜色
+                    .shou{
+                        color: #ff8e27;
+                    }
+                    .hou{
+                        color: #3dbe32;
+                    }
+                    .zhong{
+                        color: #59a9f3;
+                    }
+                    .qian{
+                        color: #c62320;
+                    }
+                    .ti{
+                        color: #999999;
+                    }
+                }
+            }
+            .left{
+                div{
+                    justify-content: flex-end;
+                    .last{
+                        justify-content: flex-start;
+                    }
+                    .hao{
+                        justify-content: flex-end;
+                    }
+                    .name{
+                        justify-content: flex-end;
+                    }
+                }
+            }
+            .right{
+                div{
+                    justify-content: flex-start;
+                    .last{
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+        // 图例注释
+        .notes{
+            width: 1000px;
+            height: 46px;
+            background-color: #f9f9f9;
+            border: solid 1px #f0f0f0;
+            margin: 24px auto;
+            display: flex;
+            .title{
+                width: 88px;
+                height: 46px;
+                background-color: #f5f5f5;
+                border: solid 1px #f0f0f0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #999999;
+                border-right: solid 1px #f0f0f0;
+            }
+            .cont{
+                flex: 1;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #202021;
+                p{
+                    margin-left: 30px;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+        //缺席队员
+        .content{
+            width: 1080px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .contents{
+                width: 530px;
+                height: 100%;
+                border: solid 1px #f0f0f0;
+                header{
+                    width: 100%;
+                    height: 46px;
+                    border-bottom: solid 1px #f0f0f0;
+                    display: flex;
+                    align-items: center;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #333333;
+                    img{
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 10px;
+                        margin-right: 7px;
+                    }
+                }
+                .public{
+                    width: 100%;
+                    height: 36px;
+                    border-top: solid 1px #f0f0f0;
+                    display: flex;
+                    div{
+                        flex: 1;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .one{
+                        border-right: 1px solid #f0f0f0;
+                    }
+                }
+                .header{
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #999999;
+                }
+                .bodys{
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    color: #333333;
+                }
+                .zhu{
+                    background-color: #fff7f6;
+                }
+                .ke{
+                    background-color: #f5fdfe;
+                }
+            }
+        }
+        //阵容概述
+        .summary{
+            width: 1080px;
+            height: 100%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            header{
+                display: flex;
+                align-items: center;
+                margin: 20px 0;
+                margin-left: -12px;
+                div{
+                    width: 70px;
+                    height: 30px;
+                    border-radius: 15px;
+                    margin: 0 12px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                div:nth-child(1){
+                    background-color: #000047;
+                    color: #ffffff;
+                }
+                div:nth-child(2){
+                    border: solid 1px #d11022;
+                    color: #d11022;
+                }
+                div:nth-child(3){
+                    border: solid 1px #21599c;
+                    color: #21599c;
+                }
+            }
+            .t{
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 18px;
+                color: #333333;
+                font-weight: 900;
+                padding-top: 10px;
+                line-height: 18px;
+            }
+            .text{
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                color: #333333;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+//相关资讯
+.news{
+     width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    .tit1{
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 16px;
+        color: #7c7e88;
+        margin: 20px 0;
+        font-weight: 900;
+    }
+    .content{
+        width: 100%;
+        height: 168px;
+        background-color: #ffffff;
+        border: solid 1px #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .contents{
+            width: 224px;
+            height: 126px;
+            background-color: #eeeeee;
+            border: solid 1px #f0f0f0;
+            margin: 0 5px;
+            position: relative;
+            cursor: pointer;
+            .bg{
+                width: 100%;
+                height: 30px;
+                background-color: rgba(0, 0, 0, 0.6);
+                position: absolute;
+                bottom: 0;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                p{
+                    padding: 0 10px;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+//相关回放
+.playback{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    .tit1{
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 16px;
+        color: #7c7e88;
+        margin: 20px 0;
+        font-weight: 900;
+        span{
+            color: #ffc002;
+            margin-right: 25px;
+        }
+    }
+    .content{
+        width: 100%;
+        height: 168px;
+        background-color: #ffffff;
+        border: solid 1px #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .contents{	
+            width: 208px;
+            height: 117px;
+            background-color: #ffffff;
+            border: solid 1px #eeeeee;
+            margin: 0 7.5px;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            .flexp{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 14px;
+                margin: 5px 0;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                padding: 0 10px;
+                span:nth-child(1){
+                    display: flex;
+                    align-items: center;
+                    img{
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        margin-right: 5px;
+                    }
+                }
+                span:nth-child(2){
+                    color: #999999;
+                    
+                }
+            }
+            .a{
+                display: flex;
+                align-items: center;
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 14px;
+                height: 14px;
+                margin-top: 14px ;
+                margin-bottom: 5px ;
+                color: #202021;
+                font-weight: 900;
+                img{
+                    margin-right: 4px;
+                }
+            }
+            .bg{
+                width: 100%;
+                height: 30px;
+                background-color: #fafafa;
+                position: absolute;
+                bottom: 0;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                color: #000047;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border-top:1px solid #eee;
+            }
+        }
+        .nav{
+            width: 20px;
+            height: 110px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+//每个小模块的tit文字
+.tit{
+    width: 100%;
+    height: 56px;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 16px;
+    color: #7c7e88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}

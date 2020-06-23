@@ -1,0 +1,145 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f8;
+}
+
+/*轮播图*/
+.swipeBox {
+    width: 100%;
+    height: 3.6rem;
+    margin-top: 0.88rem;
+
+    .swipe_item {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .swipe_img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swipe_text {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 0.28rem;
+            padding: 0 2rem 0 0.24rem;
+        }
+    }
+}
+
+.relatedInfo {
+    margin-top: .2rem;
+    background-color: #ffffff;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: .81rem;
+        padding: 0rem .21rem;
+
+        .text {
+            color: #202021;
+            font-size: .32rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: '';
+                width: .06rem;
+                height: .23rem;
+                background-color: #ffc002;
+                color: #ffc002;
+                margin-right: 9px;
+            }
+        }
+
+        .opt {
+            color: #d1d1d1;
+            font-size: .24rem;
+
+            .active {
+                color: #333333;
+            }
+        }
+    }
+
+    .relatedlist {
+        .details {
+            display: flex;
+            padding: 0rem .24rem;
+            height: 1.96rem;
+            align-items: center;
+
+            .left {
+                margin-right: .15rem;
+
+                img {
+                    width: 2.4rem;
+                    height: 1.35rem;
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 1.35rem;
+
+                .titles {
+                    color: #222222;
+                    font-size: .28rem;
+                    font-weight: bold;
+                    line-height: .36rem;
+                }
+
+                .content {
+                    color: #999999;
+                    font-size: .24rem;
+                    line-height: .30rem;
+                }
+
+                .flows {
+                    line-height: .23rem;
+                    display: flex;
+
+                    span {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 0.23rem;
+                            height: 0.23rem;
+                            margin-right: 0.1rem;
+                        }
+                    }
+
+                    .time {
+                        color: #999999;
+                        font-size: .24rem;
+                    }
+
+                    .comment {
+                        margin-left: .4rem;
+                        @extend .time;
+                    }
+
+                    .flow {
+                        margin-left: .4rem;
+                        @extend .time;
+                    }
+                }
+            }
+        }
+    }
+
+}

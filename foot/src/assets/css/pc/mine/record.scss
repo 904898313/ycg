@@ -1,0 +1,57 @@
+
+.record{
+  width:910px;
+  .recordList{
+    background-color: #fff;
+    width:100%;
+    .thead{
+      display: flex;
+      height:55px;
+      span{
+        width:25%;
+        flex:1;
+        text-align: center;
+        line-height: 55px;
+      }
+    }
+    .list{
+      width:100%;
+      display: flex;
+      align-items: center;
+      height:55px;
+      span{
+        font-size: 14px;
+        color: #202021;
+        flex:1;
+        text-align: center;
+      }
+      i{
+        color: #2fcc86;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        flex:1;
+      }
+      .red{
+        color:#f55e53;
+        &:before{
+          content: '+';
+          color:#f55e53;
+        }
+      }
+      .green{
+        color: #2fcc86;
+        &:before{
+          content: '';
+          color:#2fcc86;
+        }
+      }
+    }
+  }
+  .pagination{
+    margin:50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

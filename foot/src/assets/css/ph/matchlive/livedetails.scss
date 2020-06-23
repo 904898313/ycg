@@ -1,0 +1,298 @@
+.container {
+    position: absolute;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f8;
+}
+
+header {
+    height: .88rem;
+    background-color: #30303d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .23rem;
+
+    .back {
+        width: .48rem;
+        height: .48rem;
+    }
+
+    span {
+        color: #ffffff;
+        font-size: .34rem;
+    }
+
+    .share {
+        width: .34rem;
+        height: .34rem;
+    }
+}
+
+.section {
+    width: 100%;
+    background-color: #fff;
+
+    .title {
+
+        .theme {
+            font-size: .36rem;
+            color: #222222;
+            font-weight: bold;
+            text-align: center;
+            margin-top: .3rem;
+        }
+
+        .time {
+            font-size: .24rem;
+            color: #999999;
+            text-align: center;
+            margin-top: .1rem;
+        }
+    }
+
+    .yuce {
+        .tag {
+            display: flex;
+            padding-top: .3rem;
+            border-top: dashed .01rem #eeeeee;
+            margin: .4rem .2rem .2rem .2rem;
+
+            span {
+                color: #202021;
+                border-radius: .02rem;
+                background-color: #f2f2f3;
+                line-height: .45rem;
+                padding: 0rem .12rem;
+                font-size: .24rem;
+                height: .45rem;
+                margin-left: .15rem;
+            }
+
+            .color {
+                background-color: $ffc002;
+                color: #fff;
+            }
+        }
+
+        .text {
+            margin-top: .1rem;
+            border-bottom: .01rem #eeeeee solid;
+            padding-bottom: .3rem;
+
+            p {
+                color: #555555;
+                font-size: .24rem;
+                margin-top: .1rem;
+                padding: 0rem .23rem;
+            }
+        }
+    }
+
+    .address {
+        padding-bottom: .2rem;
+
+        .theme {
+            color: #202021;
+            font-size: .32rem;
+            font-weight: bold;
+            margin-left: .23rem;
+            margin-top: .27rem;
+        }
+
+        .bifen {
+            margin: .14rem .24rem;
+            border-bottom: .01rem solid #eeeeee;
+            padding-bottom: .24rem;
+
+            span {
+                color: #4280c9;
+                font-size: .24rem;
+                display: flex;
+                align-items: center;
+
+                &:before {
+                    content: '';
+                    width: .08rem;
+                    height: .08rem;
+                    background-color: #4280c9;
+                    margin: 0rem .14rem 0rem .24rem;
+                }
+            }
+        }
+
+        .yc {
+            color: #333333;
+            font-size: .24rem;
+            margin-left: .45rem;
+        }
+
+        .relevantInfo {
+            display: flex;
+            margin-top: .2rem;
+
+            .ck {
+                color: #333333;
+                font-size: .24rem;
+                margin-left: .23rem;
+            }
+
+            .fp {
+                color: #4280c9;
+                font-size: .24rem;
+                text-decoration: underline;
+                margin-left: .2rem;
+            }
+
+            .hf {
+                color: #333333;
+                font-size: .24rem;
+                text-decoration: underline;
+                margin-left: .2rem;
+            }
+        }
+    }
+
+}
+
+.videoList {
+    background-color: #fff;
+    margin-top: .2rem;
+
+    .title {
+        height: .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem .23rem;
+
+        .text {
+            color: #202021;
+            font-size: .32rem;
+            font-weight: bold;
+        }
+
+        .more {
+            color: #999999;
+            font-size: .24rem;
+        }
+    }
+}
+
+.hotcollection {
+    background-color: #fff;
+    margin-top: .2rem;
+
+    .title {
+        height: .8rem;
+        display: flex;
+        padding: 0rem .23rem;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: .01rem solid #eeeeee;
+
+        p {
+            color: #202021;
+            font-size: .32rem;
+            font-weight: bold;
+        }
+
+        span {
+            color: #999999;
+            font-size: .24rem;
+        }
+    }
+}
+
+.relatedLive {
+    background-color: #fff;
+    margin-top: .2rem;
+
+    .title {
+        display: flex;
+        padding: 0rem .23rem;
+        align-items: center;
+        height: .8rem;
+
+        p {
+            color: #202021;
+            font-size: .32rem;
+            font-weight: bold;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        height: 1.8rem;
+        width: 100%;
+        border-top: .01rem #eeeeee solid;
+
+        .top {
+            color: #999999;
+            font-size: .24rem;
+            margin-top: .14rem;
+
+            .top-time {
+                margin-left: .24rem;
+                margin-right: .1rem;
+            }
+
+            .xijia {
+                margin-left: .1rem;
+            }
+        }
+
+        .mid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: .14rem;
+
+            span {
+                color: #434e60;
+                font-size: .3rem;
+                font-weight: bold;
+            }
+
+            i {
+                color: #434e60;
+                font-size: .32rem;
+                font-weight: bold;
+                margin: 0rem .3rem;
+            }
+        }
+
+        .bot {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: .1rem;
+
+            span {
+                color: #4280c9;
+                font-size: .24rem;
+                margin-right: .25rem;
+            }
+        }
+    }
+}
+
+.relatedInfo {
+    background-color: #fff;
+    margin-top: .2rem;
+
+    .title {
+        height: .8rem;
+        display: flex;
+        align-items: center;
+        font-size: .32rem;
+        color: #202021;
+        text-indent: .24rem;
+        font-weight: bold;
+    }
+
+
+}

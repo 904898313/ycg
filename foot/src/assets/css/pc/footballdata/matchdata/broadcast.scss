@@ -1,0 +1,168 @@
+.content-smallbox{
+    width: 1200px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: space-between;
+    // 左
+    .left{
+        width: 840px;
+        height: 100%;
+        // 公用
+        .result{
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            header{
+                width: 100%;
+                height: 58px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #f5f5f5;
+                p{
+                    width: 100%;
+                    height: 22px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 20px;
+                    border-left: 6px solid $ffc002;
+                    span:nth-child(1){
+                        font-size: 20px;
+                        color: #202021;
+                        font-weight: 900;
+                    }
+                }
+            }
+            .contents{
+                width: 100%;
+                height: 58px;
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                color: #333333;
+                justify-content: space-between;
+                border-bottom: 1px solid #f5f5f5;
+                .contents-time{
+                    width: 180px;
+                    span:nth-child(1){
+                        margin-right: 30px;
+                    }
+                }
+                .contents-name{
+                    height: 100%;
+                    // background-color: red;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        display: block;
+                        background-color: skyblue;
+                    }
+                    span:nth-child(1){
+                        display: flex;
+                        width: 150px;
+                        justify-content:flex-end;
+                        align-items: center;
+                        img{
+                            margin: 0 17px 0 11px;
+                        }
+                    }
+                    span:nth-child(2){
+                        font-size: 16px;
+                        line-height: 17px;
+                        color: #333333;
+                        font-weight: 900;
+                    }
+                    span:nth-child(3){
+                        display: flex;
+                        width: 150px;
+                        align-items: center;
+                        img{
+                            margin: 0 11px 0 17px;
+                        }
+                    }
+                }
+                .contents-right{
+                    span{
+                        margin: 0 15px;
+                        cursor: pointer;
+                    }
+                    span:nth-child(1){
+                        color: #262659;
+                    }
+                    span:nth-child(2){
+                        color: #f55e53;
+                    }
+                }
+            }
+        }
+    }
+    //右
+    .right{
+        width: 330px;
+        height: 100%;
+        background-color: #f1f4f9;
+        // 数据统计 复用
+        .repeat{
+            width: 100%;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            header{
+                width: 100%;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                font-weight: 900;
+                font-size: 20px;
+                color: #202021;
+                border-bottom: 1px solid #eeeeee;
+                span{
+                    padding-left: 20px;
+                }
+                img{
+                    margin-left: 5px;
+                }
+            }
+            .repeat-list{
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+                font-size: 16px;
+                color: #202021;
+                p{
+                    height: 35px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 16px;
+                        height: 16px;
+                        background-color: skyblue;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            // 英超各赛季数据回顾
+            .repeat-box{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                padding: 15px 10px;
+                flex-wrap: wrap;
+                div{
+                        height: 36px;
+                        background-color: #f3f3f8;
+                        font-size: 14px;
+                        line-height: 36px;
+                        color: #202021;
+                        text-align: center;
+                        margin: 5px 5.5px;
+                        cursor: pointer;
+                        padding: 0 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    background-color: #edeef3;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #30303d;
+    height: .88rem;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+
+    span {
+        color: #ffffff;
+    }
+
+    img {
+        position: absolute;
+        width: .48rem;
+        height: .48rem;
+        left: .22rem;
+    }
+}
+
+.content {
+    background-color: #ffffff;
+
+    .mode {
+        height: .88rem;
+        margin-left: .3rem;
+        border-bottom:.01rem solid #f4f4f4 ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right:.3rem;
+    }
+}
